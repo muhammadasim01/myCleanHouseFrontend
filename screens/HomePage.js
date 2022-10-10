@@ -1,7 +1,12 @@
+import BoxCard from "../components/BoxCard";
 const HomePage = () => {
-  return (<h1 className="text-3xl font-bold underline">
-    Home Page
-</h1>)
+  return (
+    <div className="flex flex-row justify-center m-20 w-[1100px] h-[300px]">
+      <BoxCard />
+      <BoxCard />
+      <BoxCard />
+    </div>
+  );
 };
 
 export default HomePage;
