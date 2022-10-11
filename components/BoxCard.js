@@ -1,13 +1,26 @@
 import Image from "next/image";
-import Box1 from "../public/assets/Box1.png";
-function BoxCard() {
+
+function BoxCard({ imageSrc, Title, Description, buttonText }) {
   return (
-    <div className="w-64 h-64 p-10 rounded-md  border-2 ">
-      <Image src={Box1} height={100} width={100} />
-      <h1 className="text-black font-bold">Become a Cleaner</h1>
-      <p className="text-black font-normal">
-        As a cleaner,make your own schedule and your own rates per hour
-      </p>
+    <div
+      className="flex flex-col p-5 w-72 rounded-[8px] bg-lightColor items-center justify-center"
+      style={{
+        backgroundImage: 'url("../public/assets/subtract-2.png")',
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+        backgroundPosition: "center center",
+      }}
+    >
+      <Image src={imageSrc} height={100} width={100} />
+      <div>
+        <h1 className="text-black font-bold mt-3  text-center">{Title}</h1>
+        <p className="text-black font-normal text-center h-20">{Description}</p>
+      </div>
+      <div>
+        <button className="text-center mt-5 text-secondaryColor font-bold">
+          {buttonText}
+        </button>
+      </div>
     </div>
   );
 }
