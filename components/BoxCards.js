@@ -8,7 +8,7 @@ import subtract2 from "../public/assets/subtract-2.png";
 import subtract3 from "../public/assets/subtract-2.png";
 function BoxCards() {
   return (
-    <div className="flex flex-row justify-between bg-darkColor border-2 mx-36 my-40 p-10">
+    <div className="flex flex-col w-full bg-secondaryColor  items-center p-10 sm:flex-row sm:justify-center">
       <BoxCard
         imageSrc={Box1}
         Title="Become a Cleaner"

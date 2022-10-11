@@ -4,7 +4,7 @@ import BannerMain from "../public/assets/BannerMain.png";
 const Banner = () => {
   return (
     <div className="bg-[url('../public/assets/banner.png')] h-[825px] w-[100vw] bg-cover">
-      <section className="text-lightColor relative top-[10rem] left-[16rem] flex items-center">
+      {/* <section className="text-lightColor relative top-[10rem] left-[16rem] flex items-center">
         <div className="left">
           <h1 className="text-[4rem] font-medium">
             Book a local cleaner in your area
@@ -30,7 +30,7 @@ const Banner = () => {
             <Image src={BannerMain}></Image>
           </figure>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };
