@@ -1,4 +1,4 @@
-import BoxCard from "../components/BoxCard";
+import BoxCards from "../components/BoxCards";
 import Header from "../components/Header";
 import Banner from "../components/Banner";
 const HomePage = () => {
@@ -6,6 +6,7 @@ const HomePage = () => {
     <>
       <Header />
       <Banner />
+      <BoxCards />
     </>
   );
 };
