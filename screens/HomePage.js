@@ -1,11 +1,12 @@
 import BoxCard from "../components/BoxCard";
+import Header from "../components/Header";
+import Banner from "../components/Banner";
 const HomePage = () => {
   return (
-    <div className="flex flex-row justify-center m-20 w-[1100px] h-[300px]">
-      <BoxCard />
-      <BoxCard />
-      <BoxCard />
-    </div>
+    <>
+      <Header />
+      <Banner />
+    </>
   );
 };
 

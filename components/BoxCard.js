@@ -2,7 +2,7 @@ import Image from "next/image";
 import Box1 from "../public/assets/Box1.png";
 function BoxCard() {
   return (
-    <div className="w-64 h-64 bg-gray-200 p-10 rounded-md">
+    <div className="w-64 h-64 p-10 rounded-md  border-2 ">
       <Image src={Box1} height={100} width={100} />
       <h1 className="text-black font-bold">Become a Cleaner</h1>
       <p className="text-black font-normal">
