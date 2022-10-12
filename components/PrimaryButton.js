@@ -1,6 +1,13 @@
 import { useEffect } from "react";
 
-const PrimaryButton = ({ text, bgColor, textColor, height, custom }) => {
+const PrimaryButton = ({
+  text,
+  bgColor,
+  textColor,
+  border,
+  height,
+  custom,
+}) => {
   useEffect(() => {
     console.log("color is", bgColor, textColor);
   }, []);
@@ -8,7 +15,7 @@ const PrimaryButton = ({ text, bgColor, textColor, height, custom }) => {
     <input
       type="button"
       value={text}
-      className={`${bgColor} ${textColor} ${height} ${custom} w-[136px] h-[38px] rounded-[8px] cursor-pointer`}
+      className={`${bgColor} ${textColor} ${height} ${custom} ${border} w-[136px] h-[38px] rounded-[8px] cursor-pointer`}
     />
   );
 };
