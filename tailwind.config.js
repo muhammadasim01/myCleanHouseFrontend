@@ -14,8 +14,12 @@ module.exports = {
       darkColor: "#000000",
       lightShade: "#FFF6E2",
     },
-    fontFamily: {
-      popins: ["popins"],
+    extend: {
+      fontFamily: {
+        heading: ["Poppins"],
+        subHeading: ["Poppins"],
+        text: ["Montserrat"],
+      },
     },
   },
   plugins: [],

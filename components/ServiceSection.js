@@ -1,7 +1,7 @@
 import React from "react";
 import RectangularCard from "./RectangularCard";
 
-function RectangularCards() {
+function ServiceSection() {
   return (
     <div className="bg-lightShade text-center py-10 sm:w-[full]">
       <h2 className="text-2xl font-bold">Experienced and Trusted Cleaners</h2>
@@ -36,4 +36,4 @@ All of our house cleaners are rated so you can choose which cleaner you want to 
   );
 }
 
-export default RectangularCards;
+export default ServiceSection;

@@ -1,25 +1,22 @@
-import Image from "next/image";
-import Banner from "../public/assets/Banner-2.png";
-function HowItWorks() {
+import React from "react";
+import ServiceCard from "./ServiceCard";
+function ServiceSection() {
   return (
-    <>
-      <div className="text-center p-5">
-        <h2 className="text-black text-2xl font-extrabold">
-          House Cleaning Services that Save You Time and Money!
-        </h2>
-        <p className="text-center text-base font-semibold leading-6 mt-5 lg:px-20">
-          At My Clean House, we understand that your time is valuable. That's
-          why we offer a house cleaning service that is convenient, reliable,
-          and affordable. We specialize in providing top-quality house cleaners
-          to busy families and individuals who don't have the time or energy to
-          clean their homes themselves.
-        </p>
+    <div className="bg-lightShade  text-left px-5 py-10 sm:flex sm:items-center sm:justify-center sm:flex-col">
+      <h2 className="font-heading text-2xl font-bold lg:text-3xl xl:text-4xl">
+        How it works
+      </h2>
+      <p className="py-2 px-1 text-md font-text font-semibold">
+        Here is how the cleaning process work:
+      </p>
+      <div className="md:flex md:flex-row md:justify-center md:w-full md:flex-wrap">
+        <ServiceCard />
+        <ServiceCard />
+        <ServiceCard />
+        <ServiceCard />
       </div>
-      <span className="flex items-center justify-center w-full px-5 border-b-2 border-b-primaryColor">
-        <Image src={Banner} />
-      </span>
-    </>
+    </div>
   );
 }
 
-export default HowItWorks;
+export default ServiceSection;

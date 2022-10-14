@@ -5,7 +5,7 @@ function ContactCleaner() {
   return (
     <div className=" bg-primaryColor flex flex-col items-center justify-center p-5 sm:flex-row sm:h-[450px] md:[550px]">
       <div className="sm:h-[430px] sm:flex sm:flex-col  sm:justify-center sm:items-center sm:w-[50%] md:my-40 lg:px-14">
-        <h2 className="text-center text-base font-bold text-lightColor p-3 md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">
+        <h2 className="text-center font text-base font-bold text-lightColor p-3 md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">
           How to contact your cleaner
         </h2>
         <p className="text-sm font-normal text-center leading-5 text-lightColor sm:text-center md:px-10 lg:text-base">
