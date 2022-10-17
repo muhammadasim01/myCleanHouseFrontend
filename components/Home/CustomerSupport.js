@@ -1,6 +1,6 @@
 import Image from "next/image";
 import PrimaryButton from "./PrimaryButton";
-import customersupportImage from "../public/assets/customer-support.png";
+import customersupportImage from "../../public/assets/customer-support.png";
 function CustomerSupport() {
   return (
     <div className="flex flex-col px-5 my-10 items-center justify-center p-5 sm:flex-row sm:h-[450px] md:[550px]">

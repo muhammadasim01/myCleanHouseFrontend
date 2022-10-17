@@ -1,6 +1,6 @@
 import Image from "next/image";
 import PrimaryButton from "./PrimaryButton";
-import BannerMain from "../public/assets/BannerMain.png";
+import BannerMain from "../../public/assets/BannerMain.png";
 import { BiSearch } from "react-icons/bi";
 import { FaStar } from "react-icons/fa";
 import { AiTwotoneStar } from "react-icons/ai";

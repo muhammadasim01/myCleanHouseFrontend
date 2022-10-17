@@ -1,6 +1,6 @@
 import Image from "next/image";
 import PrimaryButton from "./PrimaryButton";
-import contactImage from "../public/assets/contact-cleaner.png";
+import contactImage from "../../public/assets/contact-cleaner.png";
 function ContactCleaner() {
   return (
     <div className=" bg-primaryColor flex flex-col items-center justify-center p-5 sm:flex-row sm:h-[450px] md:[550px]">

@@ -1,10 +1,10 @@
 import Link from "next/link";
 import Image from "next/image";
-import PrimaryButton from "./PrimaryButton";
+import PrimaryButton from "./Home/PrimaryButton";
 import { color } from "../styles/global.css";
 import logo from "../public/assets/logo.png";
 import mobileLogo from "../public/assets/logo-mobile.png";
-import Button from "./Button";
+import Button from "./Home/Button";
 import { useState } from "react";
 import { HiMenu } from "react-icons/hi";
 import { MdClose } from "react-icons/md";

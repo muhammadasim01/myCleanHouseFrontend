@@ -1,5 +1,5 @@
 import PrimaryButton from "./PrimaryButton";
-import phoneImage from "../public/assets/Mobile-app.png";
+import phoneImage from "../../public/assets/Mobile-app.png";
 import Image from "next/image";
 function MobileAppSection() {
   return (

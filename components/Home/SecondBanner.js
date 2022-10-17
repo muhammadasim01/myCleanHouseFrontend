@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Banner from "../public/assets/Banner-2.png";
+import Banner from "../../public/assets/Banner-2.png";
 function SecondBanner() {
   return (
     <div className="py-10">
