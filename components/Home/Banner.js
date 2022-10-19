@@ -7,7 +7,7 @@ import { AiTwotoneStar } from "react-icons/ai";
 const Banner = () => {
   return (
     <>
-      <div className="bg-[url('../public/assets/banner.png')] items-center justify-center h-[616px]  sm:h-[780px] w-[100vw] md:h-[700px] bg-center md:bg-center lg:bg-cover xl:bg:contain 2xl:bg:contain xl-h-[500px] 2xl:h-[800px]">
+      <div className="bg-[url('../public/assets/banner.png')] items-center justify-center h-[616px]  sm:h-[780px] w-[108%] sm:w-full md:h-[700px] bg-center md:bg-center lg:bg-cover xl:bg:contain 2xl:bg:contain xl-h-[500px] 2xl:h-[800px]">
         <div className="flex flex-row items-center justify-center pt-[9rem] md:pt-[15rem] lg:pt-[10rem] xl:pt-[7rem]">
           <div className="flex flex-col">
             <span className="flex self-start px-7 pb-5">

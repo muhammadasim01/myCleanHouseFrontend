@@ -6,9 +6,9 @@ import Header from "../components/Header";
 function Blogs() {
   return (
     <div>
-      {/* <Header />
+      <Header bgColor={" bg-primaryColor"} />
       <BlogBanner />
-      <BlogPost /> */}
+      <BlogPost />
       <Footer />
     </div>
   );

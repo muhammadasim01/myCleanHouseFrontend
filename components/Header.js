@@ -9,7 +9,7 @@ import { useState } from "react";
 import { HiMenu } from "react-icons/hi";
 import { MdClose } from "react-icons/md";
 import { AiOutlineClose } from "react-icons/ai";
-const Header = () => {
+const Header = ({ bgColor, position }) => {
   let Links = [
     { name: "Our Guarantee", link: "/" },
     { name: "About Us", link: "/" },
@@ -21,7 +21,9 @@ const Header = () => {
   console.log("The State is", navbarOpen);
   return (
     <>
-      <div className="absolute w-full flex justify-between px-2 py-3 ">
+      <div
+        className={`${position} sm:w-full flex justify-between px-2 py-3 w-[100%] ${bgColor}`}
+      >
         <Image src={mobileLogo} className="z-50" />
         <button
           className="z-50  text-lightColor "
@@ -34,7 +36,7 @@ const Header = () => {
             <HiMenu className="h-7 w-10 sm:hidden " />
           )}
         </button>
-        <div className="hidden sm:block px-5 h-auto w-[80%] lg:w-[85%] sm:w-[60rem] lg-[70%] sm:text-xs text-lightColor sm:py-2">
+        <div className="hidden sm:block px-5 h-auto w-[100%] lg:w-[85%] sm:w-[60rem] lg-[70%] sm:text-xs text-lightColor sm:py-2">
           <ul className="w-full sm:flex sm:mx-4  sm:justify-between sm:items-center">
             <li className="font-text text-base font-medium sm:text-xs  md:text-sm md:font-medium lg:text-md">
               Our Guarantee
@@ -60,6 +62,7 @@ const Header = () => {
             <PrimaryButton
               text="Register"
               bgColor={"bg-primaryColor"}
+              border={"border-2 border-lightColor"}
               textColor={"text-lightColor"}
               customCode={"sm:w-[5rem] sm:h-[2rem] lg:w-[6rem] lg:h-[2.3rem]"}
             />
@@ -67,7 +70,7 @@ const Header = () => {
         </div>
       </div>
       {navbarOpen ? (
-        <div className="text-center sm:hidden bg-primaryColor absolute w-full ">
+        <div className="text-center sm:hidden bg-primaryColor absolute w-[100%]">
           <ul className=" h-52 py-3  flex flex-col justify-evenly items-center pt-[5rem]  font-heading text-xl font-normal text-lightColor">
             <li className="font-text text-base font-medium sm:text-xs">
               Our Guarantee
@@ -78,7 +81,9 @@ const Header = () => {
             <li className="font-text text-base font-medium sm:text-xs">
               Profile
             </li>
-            <li className="font-text text-base font-medium sm:text-xs">Chat</li>
+            <li className="font-text text-base font-medium sm:text-xs">
+              Hello G
+            </li>
           </ul>
         </div>
       ) : (

@@ -10,10 +10,11 @@ import CustomerSupport from "../components/Home/CustomerSupport";
 import Subscription from "../components/Home/Subscription";
 import SecondBanner from "../components/Home/SecondBanner";
 import ServiceSection from "../components/Home/ServiceSection";
+import Footer from "../components/Footer";
 const HomePage = () => {
   return (
     <>
-      <Header />
+      <Header position={"absolute"} />
       <Banner />
       <BoxCards />
       <HowItWorks />
@@ -24,6 +25,7 @@ const HomePage = () => {
       <ServiceSection />
       <CustomerSupport />
       <Subscription />
+      <Footer />
     </>
   );
 };

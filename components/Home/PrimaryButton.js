@@ -16,7 +16,7 @@ const PrimaryButton = ({
     <input
       type="button"
       value={text}
-      className={`${bgColor} ${textColor} ${height} ${custom} ${border} ${customCode} w-[136px] h-[38px] rounded-[8px] cursor-pointer`}
+      className={`${bgColor} ${textColor} ${height} ${custom} ${border} ${customCode} ${border} w-[136px] h-[38px] rounded-[8px] cursor-pointer`}
     />
   );
 };
