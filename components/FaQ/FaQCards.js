@@ -3,9 +3,8 @@ import FaQCard from "./FaQCard";
 
 function FaQCards() {
   return (
-    <div className=" flex flex-col w-[100%] border-4 border-secondaryColor sm:flex-row justify-center items-center sm:w-full">
-      <div className="flex flex-col w-full border-4 border-primaryColor items-center justify-center bg-lightColor sm:flex-row sm:flex-wrap  lg:w-[1700px]">
-        {/* <h1>Hello World</h1> */}
+    <div className=" flex flex-col w-[100%] sm:flex-row justify-center items-center sm:w-full">
+      <div className="flex flex-col items-center justify-center bg-lightColor sm:flex-row w-full flex-wrap lg:w-[1100px]">
         <FaQCard
           Title="How it works"
           heading="How do I trial the service?"

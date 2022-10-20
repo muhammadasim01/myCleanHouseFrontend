@@ -12,14 +12,14 @@ const Footer = () => {
     <>
       <footer className="relative bottom-0 left-0 right-0 w-[100%] flex flex-col items-start bg-primaryColor py-5 px-3">
         <div className="flex items-start flex-col sm:flex-row sm:items-center lg:w-full">
-          <div className=" flex flex-col w-full  text-lightColor items-start md:self-start lg:pr-10">
+          <div className=" flex flex-col w-full  text-lightColor items-start sm:self-start lg:pr-10">
             <Image src={logo} width={100} height={80} />
             <p className="text-lightColor font-text font-light w-full text-sm 2xl:w-[18rem] mt-3">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi
               lacinia pellentesque.
             </p>
           </div>
-          <div className="flex flex-col text-lightColor md:self-start w-full items-start ">
+          <div className="flex flex-col text-lightColor sm:self-start w-full items-start ">
             <h1 className="text-lg font-subHeading font-bold">Services</h1>
             <div className="flex flex-col">
               <span className="mt-2 font-light text-sm">
@@ -36,7 +36,7 @@ const Footer = () => {
               </span>
             </div>
           </div>
-          <div className="flex flex-col text-lightColor md:self-start w-full ">
+          <div className="flex flex-col text-lightColor sm:self-start w-full ">
             <h1 className="text-lg font-subHeading font-bold">Explore</h1>
             <div className="flex flex-col">
               <span className="mt-2 font-light text-sm">
