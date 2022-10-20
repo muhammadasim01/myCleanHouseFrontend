@@ -3,6 +3,7 @@ import Image from "next/image";
 import PrimaryButton from "./Home/PrimaryButton";
 import { color } from "../styles/global.css";
 import logo from "../public/assets/logo.png";
+import logo2 from "../public/assets/logo-2.png";
 import mobileLogo from "../public/assets/logo-mobile.png";
 import Button from "./Home/Button";
 import { useState } from "react";
@@ -24,7 +25,7 @@ const Header = ({ bgColor, position }) => {
       <div
         className={`${position} sm:w-full flex justify-between px-2 py-3 w-[100%] ${bgColor}`}
       >
-        <Image src={mobileLogo} className="z-50" />
+        <Image src={logo2} height={80} width={90} />
         <button
           className="z-50  text-lightColor "
           type="button"
