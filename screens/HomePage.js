@@ -18,7 +18,7 @@ const HomePage = () => {
       <TopBar />
       <Header position={"absolute"} />
       <Banner />
-      {/* <BoxCards />
+      <BoxCards />
       <HowItWorks />
       <SecondBanner />
       <FeaturesSection />
@@ -27,7 +27,7 @@ const HomePage = () => {
       <ServiceSection />
       <CustomerSupport />
       <Subscription />
-      <Footer /> */}
+      <Footer />
     </div>
   );
 };

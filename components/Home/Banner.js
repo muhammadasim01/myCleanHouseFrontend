@@ -22,7 +22,10 @@ const Banner = () => {
               className="font-heading text-lightColor text-3xl font-bold px-7"
               z
             >
-              Book a local cleaner in your area
+              Book a local cleaner in your area{" "}
+              <span className="font-subHeading text-lg font-light">
+                Canada & USA
+              </span>
             </h1>
             <p className="text-lightColor font-text text-lg font-medium py-5 px-7">
               <span className="flex items-center font-semibold mb-2">
@@ -42,11 +45,11 @@ const Banner = () => {
             <form className="flex items-center justify-center w-full pl-7 sm:w-[600px]">
               <input
                 type="email"
-                placeholder="Enter your postcode"
+                placeholder="Enter your postcode/Zip code"
                 className="h-10 p-5 w-full my-4 rounded-md  "
               />
               <button>
-                <BiSearch className="h-6 w-6 text-secondaryColor relative right-10 " />
+                <BiSearch className="h-6 w-6 text-secondaryColor relative right-8 " />
               </button>
             </form>
           </div>

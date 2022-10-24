@@ -1,18 +1,22 @@
-function ServiceCard() {
+function ServiceCard({ Count, Title, Description, buttonText }) {
   return (
-    <div className="border-2 border-darkColor bg-secondaryColor bg-opacity-20 p-5 rounded-md my-6 md:w-[350px] mx-2 lg:w-[480px] lg:h-[300px] xl:w-[600px] ">
-      <div className=" h-12 w-12 bg-secondaryColor p-2 rounded-full flex items-center justify-center text-2xl text-lightColor">
-        1
+    <div className="bg-secondaryColor bg-opacity-20 p-5 rounded-md my-6 flex flex-col items-center justify-center md:w-[350px] mx-2 lg:w-[480px] lg:h-[300px] xl:w-[600px] ">
+      <div className=" h-8 w-8 bg-secondaryColor p-2 rounded-full flex items-center justify-center text-2xl text-lightColor">
+        {Count}
       </div>
-      <h3 className="text-xl font-bold text-left pt-5 font-heading lg:pl-20">
-        Find a cleaner
+      <h3 className="text-2xl font-bold text-center pt-5 font-heading lg:pl-20">
+        {Title}
       </h3>
-      <p className="text-left font-text pt-5 text-base font-normal lg:pl-20">
-        Just enter your postcode on our website or click on the Find A Cleaner
-        below. The system will automatically pair you with the best local
-        cleaner based on your location and needs. You can also check out reviews
-        and ratings to find the perfect match.{" "}
+      <p className="text-center font-text pt-5 text-md font-normal lg:pl-20">
+        {Description}
       </p>
+      {buttonText && (
+        <div className="mt-5">
+          <button className="text-center mt-2 font-text text-sm font-bold text-lightColor bg-secondaryColor py-1 px-4 rounded-md border-[1px] border-lightColor">
+            {buttonText}
+          </button>
+        </div>
+      )}
     </div>
   );
 }

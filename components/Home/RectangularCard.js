@@ -1,16 +1,31 @@
-import React from "react";
-
-function RectangularCard({ Title, Description }) {
+import Image from "next/image";
+// import subtract1 from "../../public/assets/subtract-1.png";
+function RectangularCard({ imageSrc, Title, Description }) {
   return (
-    <div className="bg-secondaryColor px-8 mx-2 pt-2 pb-4 rounded-md my-5 sm:h-[220px] sm:w-[280px] lg:w-[400px] lg:h-[180px] xl:w-[500px] 2xl:w-[700px]">
-      <h3 className="py-2 text-lightColor text-left text-lg font-bold">
-        {Title}
-      </h3>
-      <p className="text-lightColor text-left text-xs font-light leading-4 lg:font-normal lg:leading-5">
-        {Description}
-      </p>
+    <div className="flex bg-lightColor rounded-lg mx-4 my-10 shadow-[-10px_1px_20px_15px_rgba(0,0,0,0.1)]">
+      <div className="w-[25%] pt-10 pl-2">
+        <Image src={imageSrc} />
+      </div>
+      <div className="w-[75%] pt-10">
+        <h2 className="font-subHeading px-3 text-3xl font-bold text-left">
+          {Title}
+        </h2>
+        <p className="font-text text-xl font-normal text-left px-5 py-5">
+          {Description}
+        </p>
+      </div>
     </div>
   );
 }
 
 export default RectangularCard;
+
+// style={{
+//   backgroundImage: 'url("../../public/assets/subtract-1.png")',
+//   backgroundRepeat: "no-repeat",
+//   backgroundSize: "cover",
+//   backgroundPosition: "center center",
+// }}
+
+// ../public/assets/subtract-1.png
+//bg-[url('../public/assets/subtract-1.png')] drop-shadow-none bg-no-repeat bg-contain bg-right-bottom

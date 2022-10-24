@@ -3,10 +3,10 @@ import PrimaryButton from "./PrimaryButton";
 function Subscription() {
   return (
     <div className="flex flex-col items-center justify-center bg-darkColor p-5 py-10">
-      <h2 className="text-lightColor text-[23px] lg:text-[30px] font-heading font-bold">
+      <h2 className="text-center text-lightColor text-3xl font-subHeading font-medium leading-10">
         Subscribe to our newsletter{" "}
       </h2>
-      <p className="text-center font-text text-base font-normal py-3 px-3 md:w-[781px] text-lightColor">
+      <p className="text-center font-text text-lg font-normal leading-7 py-3 px-3 md:w-[781px] text-lightColor">
         Want to stay updated on My Clean House latest news, offers, and
         promotions? Subscribe to our newsletter! You can opt out of receiving
         future communications from us at any time by unsubscribing from
