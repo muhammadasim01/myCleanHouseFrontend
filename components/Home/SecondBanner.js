@@ -7,7 +7,7 @@ function SecondBanner() {
         <h2 className="text-black text-4xl font-bold">
           House Cleaning Services that Save You Time and Money!
         </h2>
-        <p className="text-center text-xl font-normal leading-6 mt-5 lg:px-20">
+        <p className="font-text text-center text-xl font-normal leading-6 mt-5 lg:px-20">
           At My Clean House, we understand that your time is valuable. That's
           why we offer a house cleaning service that is convenient, reliable,
           and affordable. We specialize in providing top-quality house cleaners

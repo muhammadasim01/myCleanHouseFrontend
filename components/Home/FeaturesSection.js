@@ -20,7 +20,7 @@ function FeaturesSection() {
       </p>
       <FeaturedCard1 />
       <FeaturedCard2 />
-      <p className="font-text text-darkColor text-center text-xl font-extrabold py-5 leading-7">
+      <p className="font-subHeading text-darkColor text-center text-base font-extrabold py-5 leading-7">
         At My Clean House we aim to make your life easier by taking on those
         extra, time-consuming tasks that you just dont have the time for.
         Whether its mopping your floors, doing the laundry or ironing your

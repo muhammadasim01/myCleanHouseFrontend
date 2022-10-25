@@ -7,7 +7,7 @@ import Card from "./Card";
 
 function BlogPost() {
   return (
-    <div className="flex items-center justify-center w-[108%] sm:w-[100%] ">
+    <div className="flex items-center justify-center w-[100%]">
       <div className="h-auto py-10 px-4 flex items-center w-[100%] justify-center flex-col  ">
         <div className="flex items-center w-[100%] sm:px-8 sm:w-[100%] lg:w-[70%]">
           <h2 className="text-sm font-subHeading font-semibold sm:text-lg">
