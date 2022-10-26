@@ -2,23 +2,10 @@ import PrimaryButton from "./PrimaryButton";
 import { FcGoogle } from "react-icons/fc";
 import { BsFacebook } from "react-icons/bs";
 import { BsApple } from "react-icons/bs";
-import { useState } from "react";
 import SecondryButton from "./SecondryButton";
 function SignIn() {
-  const [toggle, setToggle] = useState(null);
   return (
-    <div className="flex flex-col h-[880px] border-2 justify-between items-center">
-      <h2 className="font-heading text-3xl font-bold py-8 px-5">
-        Sign In or Sign Up
-      </h2>
-      <div className="border-2 w-48 flex justify-between px-2 py-1 bg-accentColor rounded-full">
-        <button className="font-text text-lightColor text-base font-semibold">
-          Sign In
-        </button>
-        <button className="font-text text-lightColor text-base font-semibold">
-          Sign Up
-        </button>
-      </div>
+    <div className="flex flex-col justify-between items-center h-[800px]">
       <PrimaryButton
         logo={<FcGoogle />}
         Title="Continue with Google"
