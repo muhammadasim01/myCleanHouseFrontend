@@ -4,16 +4,11 @@ import SignUp from "./SignUp";
 
 function SignInSignUp() {
   const [isSignIn, setIsSignIn] = useState(true);
-  console.log("The State1 is", isSignIn);
   const handleSignInButton = () => {
-    if (!isSignIn) {
-      setIsSignIn(true);
-    }
+    !isSignIn && setIsSignIn(true);
   };
   const handleSignUpButton = () => {
-    if (isSignIn) {
-      setIsSignIn(false);
-    }
+    isSignIn && setIsSignIn(false);
   };
   return (
     <div className="flex flex-col h-auto justify-between items-center">
@@ -22,7 +17,6 @@ function SignInSignUp() {
       </h2>
       <div className="w-48 flex justify-between  mb-5 bg-accentColor rounded-full">
         <button
-          // onClick={() => setIsSignIn(!false)}
           className={`font-text text-lightColor text-base font-semibold w-[50%] py-1 rounded-full ${
             isSignIn && "bg-darkColor"
           }`}
@@ -31,7 +25,6 @@ function SignInSignUp() {
           Sign In
         </button>
         <button
-          // onClick={() => setIsSignUp(!false) && setIsSignIn(false)}
           className={`font-text text-lightColor text-base font-semibold w-[50%] py-1 rounded-full ${
             !isSignIn && "bg-darkColor"
           }`}
