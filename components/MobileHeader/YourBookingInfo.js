@@ -130,16 +130,16 @@ function YourBookingInfo() {
         <p>Do you want the WHOLE property to be cleaned?</p>
         <div className="w-28 flex justify-between  mb-5 bg-[#6762f01a] rounded-full">
           <button
-            className={`font-text text-darkColor text-base font-semibold w-[50%] py-1 rounded-full ${
-              toggle && "bg-darkColor text-secondaryColor"
+            className={`font-text  text-base font-semibold w-[50%] py-1 rounded-full ${
+              toggle ? "bg-darkColor text-lightColor " : "text-darkColor"
             }`}
             onClick={handleYes}
           >
             Yes
           </button>
           <button
-            className={`font-text text-darkColor text-base font-semibold w-[50%] py-1 rounded-full ${
-              !toggle && "bg-darkColor text-secondaryColor"
+            className={`font-text text-base font-semibold w-[50%] py-1 rounded-full ${
+              !toggle ? "bg-darkColor text-lightColor " : "text-darkColor"
             }`}
             onClick={handleNo}
           >

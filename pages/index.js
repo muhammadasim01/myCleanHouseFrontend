@@ -9,8 +9,10 @@ import VirifyEmail from "../components/MobileHeader/VerifyEmail";
 import UpdateEmail from "../components/MobileHeader/UpdateEmail";
 import SignInSignUp from "../components/MobileHeader/SignInSignUp";
 import HowItsWorks from "../screens/HowItsWorks";
-import GetAQuoteForm from "../components/MobileHeader/GetAQuoteForm";
+import GetAQuoteForm1 from "../components/MobileHeader/GetAQuoteForm1";
 import BookingSummary from "../components/MobileHeader/BookingSummary";
+import SendAsAGift from "../components/MobileHeader/SendAsAGift";
+import GetAQuoteForm2 from "../components/MobileHeader/GetAQuoteForm2";
 
 export default function Home() {
   return (
@@ -22,8 +24,10 @@ export default function Home() {
         {/* <SignUp /> */}
         {/* <VirifyEmail /> */}
         {/* <UpdateEmail /> */}
-        {/* <GetAQuoteForm /> */}
-        <BookingSummary />
+        {/* <GetAQuoteForm1 /> */}
+        <GetAQuoteForm2 />
+        {/* <BookingSummary /> */}
+        {/* <SendAsAGift /> */}
         {/* <SignInSignUp /> */}
         {/*Other All Screens */}
         {/* <HomePage /> */}

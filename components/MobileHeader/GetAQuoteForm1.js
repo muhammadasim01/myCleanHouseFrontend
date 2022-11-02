@@ -1,6 +1,6 @@
 import YourBookingInfo from "./YourBookingInfo";
 
-function GetAQuoteForm() {
+function GetAQuoteForm1() {
   return (
     <div className="border-2 border-primaryColor px-2 h-auto">
       <div className="text-right">
@@ -27,4 +27,4 @@ function GetAQuoteForm() {
   );
 }
 
-export default GetAQuoteForm;
+export default GetAQuoteForm1;
