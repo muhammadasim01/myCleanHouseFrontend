@@ -15,18 +15,18 @@ function SignInSignUp() {
       <h2 className="font-heading text-3xl font-bold py-8 px-5">
         Sign In or Sign Up
       </h2>
-      <div className="w-48 flex justify-between  mb-5 bg-accentColor rounded-full">
+      <div className="w-48 flex justify-between  mb-5 bg-[#E8EDF5] rounded-full">
         <button
-          className={`font-text text-lightColor text-base font-semibold w-[50%] py-1 rounded-full ${
-            isSignIn && "bg-darkColor"
+          className={`font-text text-base font-semibold w-[50%] py-1 rounded-full ${
+            isSignIn ? "bg-darkColor text-lightColor" : "text-darkColor"
           }`}
           onClick={handleSignInButton}
         >
           Sign In
         </button>
         <button
-          className={`font-text text-lightColor text-base font-semibold w-[50%] py-1 rounded-full ${
-            !isSignIn && "bg-darkColor"
+          className={`font-text text-base font-semibold w-[50%] py-1 rounded-full ${
+            !isSignIn ? "bg-darkColor text-lightColor" : "text-darkColor"
           }`}
           onClick={handleSignUpButton}
         >

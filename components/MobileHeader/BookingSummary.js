@@ -92,7 +92,7 @@ function BookingSummary() {
         </div>
       </div>
       <div className="border-b-2 w-full py-2 text-[#A9A9A9]"></div>
-      <div className="border-[1px] border-secondaryColor bg-[#6762f01a] py-2 my-5 rounded-lg flex items-center justify-center">
+      <div className="py-2 my-5 bg-secondaryColor bg-opacity-10 decoration-0 outline-none border-[1.7px] border-secondaryColor border-opacity-50 rounded-lg flex items-center justify-center">
         <p className="font-text text-xl font-bold text-darkColor">
           Edit Booking
         </p>

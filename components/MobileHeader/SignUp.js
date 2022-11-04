@@ -15,7 +15,7 @@ function SignUp() {
             <input
               type="text"
               name="firstName"
-              className="w-[140px] bg-[#E8EDF5]  py-2 px-2 rounded-md mx-2"
+              className="w-[140px] bg-secondaryColor bg-opacity-10 decoration-0 outline-none border-[1.7px] border-secondaryColor border-opacity-50  py-2 px-2 rounded-md mx-2"
             />
           </div>
           <div>
@@ -25,7 +25,7 @@ function SignUp() {
             <input
               type="text"
               name="lastName"
-              className="w-[140px]  bg-[#E8EDF5]  py-2 px-4 rounded-md mx-2"
+              className="w-[140px] bg-secondaryColor bg-opacity-10 decoration-0 outline-none border-[1.7px] border-secondaryColor border-opacity-50  py-2 px-4 rounded-md mx-2"
             />
           </div>
         </div>
@@ -35,7 +35,7 @@ function SignUp() {
         <input
           type="text"
           name="lastName"
-          className="w-[300px]  bg-[#E8EDF5]  py-2 px-4 rounded-md mx-2"
+          className="w-[300px]  bg-secondaryColor bg-opacity-10 decoration-0 outline-none border-[1.7px] border-secondaryColor border-opacity-50  py-2 px-4 rounded-md mx-2"
         />
         <div className="flex">
           <div>
@@ -45,7 +45,7 @@ function SignUp() {
             <input
               type="text"
               name="firstName"
-              className="w-[140px] bg-[#E8EDF5]  py-2 px-4 rounded-md mx-2"
+              className="w-[140px] bg-secondaryColor bg-opacity-10 decoration-0 outline-none border-[1.7px] border-secondaryColor border-opacity-50  py-2 px-4 rounded-md mx-2"
             />
           </div>
           <div>
@@ -55,7 +55,7 @@ function SignUp() {
             <input
               type="text"
               name="lastName"
-              className="w-[140px] bg-[#E8EDF5]  py-2 px-4 rounded-md mx-2"
+              className="w-[140px] bg-secondaryColor bg-opacity-10 decoration-0 outline-none border-[1.7px] border-secondaryColor border-opacity-50  py-2 px-4 rounded-md mx-2"
             />
           </div>
         </div>
@@ -63,9 +63,9 @@ function SignUp() {
           Password
         </p>
         <input
-          type="text"
+          type="password"
           name="lastName"
-          className="w-[300px]  bg-[#E8EDF5]  py-2 px-4 rounded-md mx-2"
+          className="w-[300px]  bg-secondaryColor bg-opacity-10 decoration-0 outline-none border-[1.7px] border-secondaryColor border-opacity-50  py-2 px-4 rounded-md mx-2"
         />
         <p className="text-left font-subHeading text-2xl font-bold my-2 mx-2">
           How did you hear about us? (Optional)
@@ -73,7 +73,7 @@ function SignUp() {
         <input
           type="text"
           name="lastName"
-          className="w-[300px]  bg-[#E8EDF5]  py-2 px-4 rounded-md mx-2"
+          className="w-[300px] bg-secondaryColor bg-opacity-10 decoration-0 outline-none border-[1.7px] border-secondaryColor border-opacity-50 py-2 px-4 rounded-md mx-2"
         />
         <div className="flex px-2">
           <div className="w-[15%] bg-lightColor flex justify-center pt-5">
@@ -81,7 +81,7 @@ function SignUp() {
               type="checkbox"
               className="h-7 w-7 mt-5 ml-2 accent-primaryColor"
             /> */}
-            <RiCheckboxBlankLine className="h-10 w-10 text-[#E8EDF5] bg-[#E8EDF5] rounded-md" />
+            <RiCheckboxBlankLine className="h-10 w-10 text-[#E8EDF5] bg-secondaryColor bg-opacity-10 decoration-0 outline-none border-[1.7px] border-secondaryColor border-opacity-50 rounded-md" />
           </div>
           <div className="w-[85%]">
             <p className="font-text text-base font-normal my-4 px-3">

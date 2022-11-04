@@ -20,7 +20,13 @@ function SendAsAGift() {
           type="text"
           name="firstName"
           placeholder="First Name"
-          className="w-full bg-[#E8EDF5] border-[1px] border-secondaryColor py-2 px-2 rounded-md mx-2"
+          className="w-full bg-secondaryColor bg-opacity-10 decoration-0 outline-none border-[1.7px] border-secondaryColor border-opacity-50 py-2 px-2 rounded-md mx-2"
+        />
+        <input
+          type="text"
+          name="lastName"
+          placeholder="Last Name"
+          className="w-full bg-secondaryColor bg-opacity-10 decoration-0 outline-none border-[1.7px] border-secondaryColor border-opacity-50 py-2 px-2 rounded-md mx-2"
         />
         <div className="flex justify-between w-full">
           <p className="font-text text-base font-bold">Add a digital note</p>
@@ -28,14 +34,8 @@ function SendAsAGift() {
         </div>
         <input
           type="text"
-          name="lastName"
-          placeholder="Last Name"
-          className="w-full bg-[#E8EDF5] border-[1px] border-secondaryColor py-2 px-2 rounded-md mx-2"
-        />
-        <input
-          type="text"
           name="message"
-          className="w-full bg-[#E8EDF5] h-44 border-[1px] border-secondaryColor py-2 px-2 rounded-md mx-2"
+          className="w-full h-44 bg-secondaryColor bg-opacity-10 decoration-0 outline-none border-[1.7px] border-secondaryColor border-opacity-50 py-2 px-2 rounded-md mx-2"
         />
       </form>
       <LargeButton Text="Continue" />

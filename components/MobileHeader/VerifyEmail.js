@@ -13,7 +13,7 @@ function VerifyEmail() {
         {/* <Image src={VerifyEmailImage1} /> */}
         <Image src={VerifyEmailImage2} />
       </div>
-      <p className="font-text text-base mx-4 text-left font-medium">
+      <p className="text-center font-text text-base mx-4  font-medium">
         We just sent you a verification code. Check your spam folder if you
         don't see it in your inbox.
       </p>
@@ -25,16 +25,16 @@ function VerifyEmail() {
           type="text"
           name="lastName"
           placeholder="Enter your email address"
-          className="w-[300px]  bg-[#E8EDF5]  py-2 px-4 rounded-md mx-4"
+          className="w-[300px] bg-secondaryColor bg-opacity-10 decoration-0 outline-none border-[1.7px] border-secondaryColor border-opacity-50  py-2 px-4 rounded-md mx-4"
         />
         <div className="flex flex-col items-center justify-center">
-          <SecondryButton Title="Sign Up" />
+          <SecondryButton Title="Verify" />
           <TertiaryButton Title="Resend Code" />
         </div>
       </form>
       <div className="flex justify-between items-center px-5 py-5">
-        <p className="font-text text-sm font-bold">Change Email</p>
-        <p className="font-text text-sm font-bold">Skip for now</p>
+        <p className="font-text text-md font-bold">Change Email</p>
+        <p className="font-text text-md font-bold">Skip for now</p>
       </div>
     </div>
   );

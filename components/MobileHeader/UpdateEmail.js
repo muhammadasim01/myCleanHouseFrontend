@@ -13,9 +13,9 @@ function UpdateEmail() {
         {/* <Image src={VerifyEmailImage1} /> */}
         <Image src={VerifyEmailImage2} />
       </div>
-      <p className="font-text text-base mx-4 text-left font-medium">
-        We just sent you a verification code. Check your spam folder if you
-        don't see it in your inbox.
+      <p className="font-text text-base mx-4 text-center font-medium leading-6 ">
+        We will send a new verification link to this email. After verifying ,
+        you will be able to log in to your account using your original password.
       </p>
       <form>
         <p className="text-left font-subHeading text-2xl font-bold my-2 px-4">
@@ -25,9 +25,9 @@ function UpdateEmail() {
           type="text"
           name="lastName"
           placeholder="Check your email for code"
-          className="w-[300px]  bg-[#E8EDF5]  py-2 px-4 rounded-md mx-4"
+          className="w-[300px]  bg-secondaryColor bg-opacity-10 decoration-0 outline-none border-[1.7px] border-secondaryColor border-opacity-50  py-2 px-4 rounded-md mx-4"
         />
-        <div className="flex flex-col items-center justify-center">
+        <div className="flex flex-col items-center justify-center pb-8">
           <SecondryButton Title="Save Email" />
           <TertiaryButton Title="Cancel" />
         </div>

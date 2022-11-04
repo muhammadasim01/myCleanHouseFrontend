@@ -3,7 +3,14 @@ import { FcGoogle } from "react-icons/fc";
 import { BsFacebook } from "react-icons/bs";
 import { BsApple } from "react-icons/bs";
 import SecondryButton from "./SecondryButton";
+import { useState } from "react";
 function SignIn() {
+  const [password, setPassword] = useState(false);
+
+  const handlePassword = (e) => {
+    e.preventDefault();
+    setPassword(!password);
+  };
   return (
     <div className="flex flex-col justify-between items-center h-[800px]">
       <PrimaryButton
@@ -33,14 +40,25 @@ function SignIn() {
         <p className="text-left font-subHeading text-2xl font-bold my-2">
           Email
         </p>
-        <input type="email" className="bg-accentColor py-2 px-4 rounded-md" />
+        <input
+          type="email"
+          className="bg-secondaryColor bg-opacity-10 decoration-0 outline-none border-[1.7px] border-secondaryColor border-opacity-50 py-2 px-4 rounded-md"
+        />
         <p className="text-left font-subHeading text-2xl font-bold my-2">
           Password
         </p>
-        <input
-          type="password"
-          className="bg-accentColor py-2 px-4 rounded-md"
-        />
+        <div className="flex justify-between py-2 px-4 bg-secondaryColor bg-opacity-10 rounded-md outline-none border-[1.7px] border-secondaryColor border-opacity-50">
+          <input
+            type={password ? "text" : "password"}
+            className="outline-none bg-secondaryColor bg-opacity-0"
+          />
+          <button
+            onClick={handlePassword}
+            className="font-text text-lg font-bold"
+          >
+            Show
+          </button>
+        </div>
         <p className="font-text text-base font-normal mt-5">
           Forgot your password?
         </p>
