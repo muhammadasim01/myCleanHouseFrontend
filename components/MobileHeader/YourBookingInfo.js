@@ -49,7 +49,12 @@ function YourBookingInfo() {
         need? Here in the table is our cleaning checklists for each of the
         services provided.{" "}
       </p>
-      <LargeButton Text="Cleaning Checklist" />
+      <LargeButton
+        Text="Cleaning Checklist"
+        color="text-lightColor"
+        customCode="justify-center"
+        font="font-bold"
+      />
       <p className="font-text text-base leading-6">
         Let us know below if there is anything from the cleaning checklist from
         the service you requested that you{" "}
