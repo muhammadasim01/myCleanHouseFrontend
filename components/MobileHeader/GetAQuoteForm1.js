@@ -2,7 +2,7 @@ import YourBookingInfo from "./YourBookingInfo";
 
 function GetAQuoteForm1() {
   return (
-    <div className="border-2 border-primaryColor px-2 h-auto">
+    <div className="px-4 h-auto">
       <YourBookingInfo />
     </div>
   );
