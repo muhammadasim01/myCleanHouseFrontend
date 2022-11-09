@@ -38,7 +38,12 @@ function SendAsAGift() {
           className="w-full h-44 bg-secondaryColor bg-opacity-10 decoration-0 outline-none border-[1.7px] border-secondaryColor border-opacity-50 py-2 px-2 rounded-md mx-2"
         />
       </form>
-      <LargeButton Text="Continue" />
+      <LargeButton
+        Text="Continue"
+        customCode="justify-center"
+        color="text-lightColor"
+        font="font-bold"
+      />
     </div>
   );
 }

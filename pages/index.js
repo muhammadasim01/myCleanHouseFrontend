@@ -16,6 +16,7 @@ import GetAQuoteForm2 from "../components/MobileHeader/GetAQuoteForm2";
 import GetAQuoteForm from "../components/MobileHeader/GetAQuoteForm";
 import GetAQuoteForm3 from "../components/MobileHeader/GetAQuoteForm3";
 import GetAQuoteForm4 from "../components/MobileHeader/GetAQuoteForm4";
+import BasicInfo from "../components/MobileHeader/BasicInfo";
 
 export default function Home() {
   return (
@@ -27,13 +28,14 @@ export default function Home() {
         {/* <SignUp /> */}
         {/* <VirifyEmail /> */}
         {/* <UpdateEmail /> */}
-        <GetAQuoteForm />
+        {/* <GetAQuoteForm /> */}
         {/* <GetAQuoteForm1 /> */}
         {/* <GetAQuoteForm2 /> */}
         {/* <GetAQuoteForm3 /> */}
         {/* <GetAQuoteForm4 /> */}
         {/* <BookingSummary /> */}
         {/* <SendAsAGift /> */}
+        <BasicInfo />
         {/* <SignInSignUp /> */}
         {/*Other All Screens */}
         {/* <HomePage /> */}

@@ -3,9 +3,6 @@ import { GiUsaFlag } from "react-icons/gi";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import Flag1 from "../../public/assets/USA_Flag.png";
 import Flag2 from "../../public/assets/CANADA_Flag.png";
-import Test from "./test";
-import Test2 from "./Test2";
-import Test3 from "./Test3";
 import Image from "next/image";
 import GetAQuoteForm1 from "./GetAQuoteForm1";
 import GetAQuoteForm2 from "./GetAQuoteForm2";
@@ -34,7 +31,6 @@ function GetAQuoteForm() {
       address: false,
       payment: false,
     });
-    console.log("Your date is");
   };
   const address = () => {
     setToggle({
