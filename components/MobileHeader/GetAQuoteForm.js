@@ -15,6 +15,8 @@ function GetAQuoteForm() {
     address: false,
     payment: false,
   });
+  const [showDropDown, setShowDropDown] = useState(false);
+  const [isCanada, setIsCanada] = useState(false);
   const bookingInfo = () => {
     console.log("Your booking information");
     setToggle({
@@ -49,20 +51,51 @@ function GetAQuoteForm() {
     });
   };
   return (
-    <div className="border-2 border-primaryColor h-auto">
-      <div className="flex flex-col items-end m-3">
-        <div className="w-20 flex p-1 items-center justify-between bg-secondaryColor bg-opacity-20 rounded-xl my-1">
-          <Image src={Flag2} />
-          <p>$0</p>
-          <MdKeyboardArrowDown />
-        </div>
-        <div className="w-20 flex p-1 items-center justify-between bg-secondaryColor bg-opacity-20 rounded-xl my-1">
-          <Image src={Flag1} />
-          <p>$0</p>
-          <MdKeyboardArrowDown />
+    <div className="border-2 h-auto">
+      <div className=" absolute right-0">
+        <div className="h-[80px] w-[70px] text-right ">
+          <div
+            className="w-[70px] text-center rounded-lg flex justify-center items-center cursor-pointer"
+            onClick={() => setShowDropDown(!showDropDown)}
+          >
+            {isCanada ? (
+              <>
+                <Image src={Flag1} width="20" height="15" /> <span>$0</span>
+              </>
+            ) : (
+              <>
+                <Image src={Flag2} width="20" height="15" /> <span>$0</span>
+              </>
+            )}
+            <MdKeyboardArrowDown />
+          </div>
+
+          {showDropDown && (
+            <div className=" absolute  w-[70px] z-10">
+              <div
+                className="text-darkColor bg-secondaryColor bg-opacity-10  block text-center rounded-lg cursor-pointer"
+                onClick={() => {
+                  setIsCanada(true);
+                  setShowDropDown(false);
+                }}
+              >
+                <Image src={Flag1} width="20" height="15" /> $0
+              </div>
+
+              <div
+                className="text-darkColor  block text-center rounded-lg cursor-pointer"
+                onClick={() => {
+                  setIsCanada(false);
+                  setShowDropDown(false);
+                }}
+              >
+                <Image src={Flag2} width="20" height="15" /> $0
+              </div>
+            </div>
+          )}
         </div>
       </div>
-      <div className="w-full">
+      <div className="w-full mt-11">
         <h2 className="font-heading  text-3xl font-bold py-2 px-4">
           Get Your Quote
         </h2>
