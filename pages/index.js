@@ -17,6 +17,7 @@ import GetAQuoteForm from "../components/MobileHeader/GetAQuoteForm";
 import GetAQuoteForm3 from "../components/MobileHeader/GetAQuoteForm3";
 import GetAQuoteForm4 from "../components/MobileHeader/GetAQuoteForm4";
 import BasicInfo from "../components/MobileHeader/BasicInfo";
+import BackgroundCheck from "../components/MobileHeader/BackgroundCheck";
 
 export default function Home() {
   return (
@@ -35,7 +36,8 @@ export default function Home() {
         {/* <GetAQuoteForm4 /> */}
         {/* <BookingSummary /> */}
         {/* <SendAsAGift /> */}
-        <BasicInfo />
+        {/* <BasicInfo /> */}
+        <BackgroundCheck />
         {/* <SignInSignUp /> */}
         {/*Other All Screens */}
         {/* <HomePage /> */}
