@@ -28,14 +28,14 @@ export default function Home() {
         {/* <SignUp /> */}
         {/* <VirifyEmail /> */}
         {/* <UpdateEmail /> */}
-        {/* <GetAQuoteForm /> */}
+        <GetAQuoteForm />
         {/* <GetAQuoteForm1 /> */}
         {/* <GetAQuoteForm2 /> */}
         {/* <GetAQuoteForm3 /> */}
         {/* <GetAQuoteForm4 /> */}
         {/* <BookingSummary /> */}
         {/* <SendAsAGift /> */}
-        <BasicInfo />
+        {/* <BasicInfo /> */}
         {/* <SignInSignUp /> */}
         {/*Other All Screens */}
         {/* <HomePage /> */}
