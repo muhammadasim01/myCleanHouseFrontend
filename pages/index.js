@@ -18,6 +18,8 @@ import GetAQuoteForm3 from "../components/MobileHeader/GetAQuoteForm3";
 import GetAQuoteForm4 from "../components/MobileHeader/GetAQuoteForm4";
 import BasicInfo from "../components/MobileHeader/BasicInfo";
 import BackgroundCheck from "../components/MobileHeader/BackgroundCheck";
+import UploadPhotoId from "../components/MobileHeader/UploadPhotoId";
+import CleanerProfile from "../components/MobileHeader/CleanerProfile";
 
 export default function Home() {
   return (
@@ -37,7 +39,9 @@ export default function Home() {
         {/* <BookingSummary /> */}
         {/* <SendAsAGift /> */}
         {/* <BasicInfo /> */}
-        <BackgroundCheck />
+        {/* <BackgroundCheck /> */}
+        {/* <UploadPhotoId /> */}
+        <CleanerProfile />
         {/* <SignInSignUp /> */}
         {/*Other All Screens */}
         {/* <HomePage /> */}

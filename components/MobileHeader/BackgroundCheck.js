@@ -4,16 +4,16 @@ function BackgroundCheck() {
   return (
     <div className="border-2 border-secondaryColor p-4">
       <div className="flex items-center justify-between">
-        <h2 className="font-subHeading  text-xl font-bold text-left">
+        <h2 className="font-subHeading  text-lg font-bold text-left">
           Background Check
         </h2>
         <MdOutlineVerified className="text-2xl" />
       </div>
       <div>
-        <p className="font-text text-sm font-normal leading-5 py-5">
-          Authorize your background check
+        <p className="font-text text-sm font-normal leading-5 py-2">
+          Authorize your <span className="font-bold">background check </span>
         </p>
-        <p className="font-text text-sm font-normal leading-5 py-5">
+        <p className="font-text text-sm font-normal leading-[16px] py-2 text-left">
           Build trust with your clients by applying for a background check. A
           one time fee of $25 (usd) will be applied to your credit card after
           completing this step. Approval will take 5 business days and we will
