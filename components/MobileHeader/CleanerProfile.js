@@ -1,5 +1,8 @@
+import Image from "next/image";
 import { useState } from "react";
-
+import { FaFileUpload } from "react-icons/fa";
+import galleryIcon from "../../public/assets/Gallery_Icon.png";
+import LargeButton from "./LargeButton";
 function CleanerProfile() {
   const [iscatFriendly, setIsCatFriendly] = useState(true);
   const [isdogFriendly, setIsDogFriendly] = useState(true);
@@ -509,8 +512,123 @@ function CleanerProfile() {
           className="border-2 h-10 border-secondaryColor border-opacity-70 w-full py-2 px-2 bg-secondaryColor bg-opacity-10 rounded-md"
         />
       </div>
+      <p className="font-subHeading text-lg font-bold leading-6 py-5">
+        What times are you available?
+      </p>
+      <p className="font-text text-lg font-norml text-darkColor leading-6">
+        Regular customers prefer to have a regular schedule each clean on the
+        same days and at the same time. If you are wanting to work full time, we
+        suggest starting as early as possible like 8am.{" "}
+      </p>
+      <p className="font-text text-sm font-normal leading-6 py-3">
+        Click on the <span className="font-bold">boxes </span> when you can
+        start and finish.(For the days you are available){" "}
+      </p>
+      <div className="flex">
+        <div className="w-[50%] flex flex-col items-center">
+          <p>AM</p>
+          <div className="border-2 border-secondaryColor border-opacity-70 bg-secondaryColor bg-opacity-10 py-2 px-10 my-3 rounded-lg">
+            08:00
+          </div>
+          <div className="border-2 border-secondaryColor border-opacity-70 bg-secondaryColor bg-opacity-10 py-2 px-10 my-3 rounded-lg">
+            09:00
+          </div>
+          <div className="border-2 border-secondaryColor border-opacity-70 bg-secondaryColor bg-opacity-10 py-2 px-10 my-3 rounded-lg">
+            10:00
+          </div>
+          <div className="border-2 border-secondaryColor border-opacity-70 bg-secondaryColor bg-opacity-10 py-2 px-10 my-3 rounded-lg">
+            11:00
+          </div>
+          <div className="border-2 border-secondaryColor border-opacity-70 bg-secondaryColor bg-opacity-10 py-2 px-10 my-3 rounded-lg">
+            12:00
+          </div>
+        </div>
+        <div className="w-[50%] flex items-center flex-col ">
+          <p>PM</p>
+          <div className="border-2 border-secondaryColor border-opacity-70 bg-secondaryColor bg-opacity-10 py-2 px-10 my-3 rounded-lg">
+            12:00
+          </div>
+          <div className="border-2 border-secondaryColor border-opacity-70 bg-secondaryColor bg-opacity-10 py-2 px-10 my-3 rounded-lg">
+            13:00
+          </div>
+          <div className="border-2 border-secondaryColor border-opacity-70 bg-secondaryColor bg-opacity-10 py-2 px-10 my-3 rounded-lg">
+            14:00
+          </div>
+          <div className="border-2 border-secondaryColor border-opacity-70 bg-secondaryColor bg-opacity-10 py-2 px-10 my-3 rounded-lg">
+            15:00
+          </div>
+          <div className="border-2 border-secondaryColor border-opacity-70 bg-secondaryColor bg-opacity-10 py-2 px-10 my-3 rounded-lg">
+            16:00
+          </div>
+          <div className="border-2 border-secondaryColor border-opacity-70 bg-secondaryColor bg-opacity-10 py-2 px-10 my-3 rounded-lg">
+            17:00
+          </div>
+          <div className="border-2 border-secondaryColor border-opacity-70 bg-secondaryColor bg-opacity-10 py-2 px-10 my-3 rounded-lg">
+            18:00
+          </div>
+          <div className="border-2 border-secondaryColor border-opacity-70 bg-secondaryColor bg-opacity-10 py-2 px-10 my-3 rounded-lg">
+            19:00
+          </div>
+          <div className="border-2 border-secondaryColor border-opacity-70 bg-secondaryColor bg-opacity-10 py-2 px-10 my-3 rounded-lg">
+            20:00
+          </div>
+          <div className="border-2 border-secondaryColor border-opacity-70 bg-secondaryColor bg-opacity-10 py-2 px-10 my-3 rounded-lg">
+            21:00
+          </div>
+          <div className="border-2 border-secondaryColor border-opacity-70 bg-secondaryColor bg-opacity-10 py-2 px-10 my-3 rounded-lg">
+            22:00
+          </div>
+        </div>
+      </div>
+      <h3 className="font-subHeading text-2xl font-bold py-3">
+        Upload Your Photos
+      </h3>
+      <p className="font-text text-lg font-normal leading-6">
+        This will be your profile photo. Use a well lit clear photo of you face
+        without sunglasses. Center your face and smile.{" "}
+      </p>
+      <p className="font-text text-sm font-normal py-2">
+        Your profile photo and gallery photos will be visible on your profile
+        page.
+      </p>
+      <div className="flex items-center justify-between">
+        <div className="h-[70px] w-[135px] bg-secondaryColor bg-opacity-10 border-2 border-secondaryColor border-opacity-70 rounded-lg"></div>
+        <div className="h-[70px] w-[135px] bg-secondaryColor bg-opacity-10 border-2 border-secondaryColor border-opacity-70 rounded-lg"></div>
+      </div>
+      <div className="border-2 border-secondaryColor border-opacity-70 bg-secondaryColor bg-opacity-10 rounded-lg flex items-center  py-3 my-5 px-5">
+        <div className="w-[20%] mt-3">
+          <FaFileUpload className="text-4xl text-secondaryColor" />
+        </div>
+        <div className="w-[80%]">
+          <p className="font text-sm font-normal pt-3">
+            Upload images from computer (or drag image into box)
+          </p>
+        </div>
+      </div>
+      <h3 className="font-subHeading text-2xl font-bold py-3">
+        Gallery Photos
+      </h3>
+      <p className="font-text text-lg font-normal leading-6">
+        Add upto 5 photos of you showcasing your work.
+      </p>
+      <div className="border-2 border-secondaryColor border-opacity-70 bg-secondaryColor bg-opacity-10 rounded-lg flex items-center  py-3 my-5 px-5">
+        <div className="w-[20%] mt-3 mr-2">
+          {/* <FaFileUpload className="text-4xl text-secondaryColor" /> */}
+          <Image src={galleryIcon} />
+        </div>
+        <div className="w-[80%]">
+          <p className="font text-sm font-normal pt-3">
+            Upload image from computer (or drag image into box)
+          </p>
+        </div>
+      </div>
+      <LargeButton
+        Text="Save & Continue"
+        customCode="justify-center"
+        color="text-lightColor"
+        font="font-bold"
+      />
     </div>
   );
 }
-
 export default CleanerProfile;
