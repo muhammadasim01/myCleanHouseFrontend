@@ -63,29 +63,46 @@ function BookingDetails() {
             <p className="font-subHeading text-lg font-bold my-1">
               Institution Number
             </p>
-            <input
-              type="number"
-              className="w-full bg-secondaryColor bg-opacity-10 decoration-0 outline-none border-[1.7px] border-secondaryColor border-opacity-50 py-2 px-2 rounded-md"
-            />
-            <BsInfoCircle onClick={toggle} />
+            <div className="flex items-center relative">
+              <input
+                type="number"
+                className="w-full bg-secondaryColor bg-opacity-10 decoration-0 outline-none border-[1.7px] border-secondaryColor border-opacity-50 py-2 px-2 rounded-md"
+              />
+              <BsInfoCircle
+                onClick={toggle}
+                className="text-secondaryColor absolute right-3"
+              />
+            </div>
           </div>
           <div className="my-3">
             <p className="font-subHeading text-lg font-bold my-1">
               Transit Number
             </p>
-            <input
-              type="number"
-              className="w-full bg-secondaryColor bg-opacity-10 decoration-0 outline-none border-[1.7px] border-secondaryColor border-opacity-50 py-2 px-2 rounded-md"
-            />
+            <div className="flex items-center relative">
+              <input
+                type="number"
+                className="w-full bg-secondaryColor bg-opacity-10 decoration-0 outline-none border-[1.7px] border-secondaryColor border-opacity-50 py-2 px-2 rounded-md"
+              />
+              <BsInfoCircle
+                onClick={toggle}
+                className="text-secondaryColor absolute right-3"
+              />
+            </div>
           </div>
           <div className="my-3">
             <p className="font-subHeading text-lg font-bold my-1">
               Bank Account Number
             </p>
-            <input
-              type="number"
-              className="w-full bg-secondaryColor bg-opacity-10 decoration-0 outline-none border-[1.7px] border-secondaryColor border-opacity-50 py-2 px-2 rounded-md"
-            />
+            <div className="flex items-center relative">
+              <input
+                type="number"
+                className="w-full bg-secondaryColor bg-opacity-10 decoration-0 outline-none border-[1.7px] border-secondaryColor border-opacity-50 py-2 px-2 rounded-md"
+              />
+              <BsInfoCircle
+                onClick={toggle}
+                className="text-secondaryColor absolute right-3"
+              />
+            </div>
           </div>
           <div className="my-3">
             <p className="font-subHeading text-lg font-bold my-1">

@@ -1,15 +1,16 @@
 import { BsFillEmojiSmileFill } from "react-icons/bs";
-function LargeButton({ Text, customCode, color, Emoji, font }) {
+function LargeButton({ Text, customCode, color, Emoji, font, toggle }) {
   return (
-    <div
-      className={`border-2 border-secondaryColor bg-secondaryColor py-2 my-5 rounded-lg flex items-center px-4 ${customCode}`}
+    <button
+      onClick={toggle}
+      className={`border-2 w-full border-secondaryColor bg-secondaryColor py-2 my-5 rounded-lg flex items-center px-4 ${customCode}`}
     >
       {Emoji && (
         <BsFillEmojiSmileFill className="text-secondaryColor text-2xl border-2 rounded-full" />
       )}
 
       <p className={`font-text text-xl ${color} ${font}`}>{Text}</p>
-    </div>
+    </button>
   );
 }
 
