@@ -37,7 +37,7 @@ const style = {
   headerTitle: `text-2xl md:text-3xl font-light`,
   content: `relative flex flex-col bg-lightColor rounded-md pointer-events-auto h-auto`,
   header: `items-start justify-between p-4 border-b border-gray-300`,
-  container: `fixed top-[5%] overflow-y-auto left-0 z-40 w-full h-full m-0`,
+  container: `fixed top-[1%] overflow-y-auto left-0 z-40 w-full h-full m-0`,
   overlay: `fixed top-0 left-0 z-30 w-screen h-screen bg-darkColor opacity-70`,
   footer: `flex flex-wrap items-center justify-end p-3 border-t border-gray-300`,
   orientation: `mt-12 mx-8 pb-6 md:m-auto md:w-6/12 lg:w-4/12 md:pt-12 focus:outline-none`,

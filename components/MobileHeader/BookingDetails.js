@@ -123,7 +123,13 @@ function BookingDetails() {
         </form>
         <LargeButton
           Text="Save & Continue"
-          customCode="justify-center"
+          customCode="justify-center bg-primaryColor"
+          color="text-lightColor"
+          font="font-bold"
+        />
+        <LargeButton
+          Text="Edit Bank Details"
+          customCode="justify-center bg-secondaryColor border-2 border-opacity-70"
           color="text-lightColor"
           font="font-bold"
         />

@@ -37,29 +37,33 @@ function SignIn() {
         <span className="border-b-2 w-14 ml-3 text-[#A9A9A9]"></span>{" "}
       </p>
       <form className="w-full flex flex-col justify-center px-4 pt-5">
-        <p className="text-left font-subHeading text-2xl font-bold my-2">
+        <p className="text-left font-subHeading text-2xl font-bold mx-2 my-2">
           Email
         </p>
-        <input
-          type="email"
-          className="bg-secondaryColor bg-opacity-10 decoration-0 outline-none border-[1.7px] border-secondaryColor border-opacity-50 py-2 px-4 rounded-md"
-        />
-        <p className="text-left font-subHeading text-2xl font-bold my-2">
+        <div className="w-[300px] flex bg-secondaryColor bg-opacity-10 decoration-0 outline-none border-2 border-secondaryColor border-opacity-70 rounded-md mx-2 my-2">
+          <input
+            type="email"
+            name="lastName"
+            className="w-[300px] decoration-0 outline-none border-none bg-secondaryColor bg-opacity-10"
+          />
+        </div>
+        <p className="text-left font-subHeading text-2xl font-bold mx-2 my-2">
           Password
         </p>
-        <div className="flex justify-between py-2 px-4 bg-secondaryColor bg-opacity-10 rounded-md outline-none border-[1.7px] border-secondaryColor border-opacity-50">
+        <div className="w-[300px] flex bg-secondaryColor bg-opacity-10 decoration-0 outline-none border-2 border-secondaryColor border-opacity-70 rounded-md mx-2 my-2">
           <input
             type={password ? "text" : "password"}
-            className="outline-none bg-secondaryColor bg-opacity-0"
+            name="lastName"
+            className="w-[300px] decoration-0 outline-none border-none bg-secondaryColor bg-opacity-10"
           />
           <button
             onClick={handlePassword}
-            className="font-text text-lg font-bold"
+            className="font-subHeading text-lg font-bold mx-2"
           >
             Show
           </button>
         </div>
-        <p className="font-text text-base font-normal mt-5">
+        <p className="font-text text-base font-normal mx-2 mt-5">
           Forgot your password?
         </p>
         <div className="flex items-center justify-center">

@@ -24,7 +24,6 @@ function VerifyEmail() {
         <input
           type="text"
           name="lastName"
-          placeholder="Enter your email address"
           className="w-[300px] bg-secondaryColor bg-opacity-10 decoration-0 outline-none border-[1.7px] border-secondaryColor border-opacity-50  py-2 px-4 rounded-md mx-4"
         />
         <div className="flex flex-col items-center justify-center">

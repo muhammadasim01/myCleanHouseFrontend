@@ -3,7 +3,7 @@ function LargeButton({ Text, customCode, color, Emoji, font, toggle }) {
   return (
     <button
       onClick={toggle}
-      className={`border-2 w-full border-secondaryColor bg-secondaryColor py-2 my-5 rounded-lg flex items-center px-4 ${customCode}`}
+      className={`w-full border-secondaryColor py-2 my-5 rounded-lg flex items-center px-4 ${customCode}`}
     >
       {Emoji && (
         <BsFillEmojiSmileFill className="text-secondaryColor text-2xl border-2 rounded-full" />

@@ -95,9 +95,9 @@ function GetAQuoteForm() {
           )}
         </div>
       </div>
-      <div className="w-full mt-11">
+      <div className="w-full mt-5">
         <h2 className="font-heading  text-3xl font-bold py-2 px-4">
-          Get Your Quote
+          Customise Your Clean
         </h2>
         <div className="flex h-10  border-2 border-secondaryColor px-1 items-center bg-secondaryColor bg-opacity-10 rounded-lg ">
           <button

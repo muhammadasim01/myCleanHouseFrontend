@@ -30,9 +30,10 @@ export default function Home() {
         {/* <SignUp /> */}
         {/* <SignIn /> */}
         {/* <SignUp /> */}
+        {/* <SignInSignUp /> */}
         {/* <VirifyEmail /> */}
         {/* <UpdateEmail /> */}
-        {/* <GetAQuoteForm /> */}
+        <GetAQuoteForm />
         {/* <GetAQuoteForm1 /> */}
         {/* <GetAQuoteForm2 /> */}
         {/* <GetAQuoteForm3 /> */}
@@ -43,8 +44,7 @@ export default function Home() {
         {/* <BackgroundCheck /> */}
         {/* <UploadPhotoId /> */}
         {/* <CleanerProfile /> */}
-        <BookingDetails />
-        {/* <SignInSignUp /> */}
+        {/* <BookingDetails /> */}
         {/*Other All Screens */}
         {/* <HomePage /> */}
         {/* <Blogs /> */}
