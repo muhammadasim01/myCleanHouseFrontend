@@ -1,6 +1,6 @@
 import { useState } from "react";
 import LargeButton from "./LargeButton";
-
+import { GoPrimitiveDot } from "react-icons/go";
 function YourBookingInfo() {
   const [toggle, setToggle] = useState(true);
   const handleYes = () => {
@@ -26,6 +26,9 @@ function YourBookingInfo() {
   const [extraTime, setExtraTime] = useState(30);
   const [applianceCleaning, setApplianceCleaning] = useState(true);
   const [extraHours, setExtraHours] = useState(2.5);
+  const [isalarmSystem, setISAlarmSystem] = useState(true);
+  const [isvisitorParking, setIsVisitorParking] = useState(true);
+  const [isPetInHouse, setIsPetInHouse] = useState(true);
   return (
     <div>
       <h2 className="font-subHeading text-2xl font-bold text-darkColor my-7">
@@ -1665,9 +1668,445 @@ function YourBookingInfo() {
       <p className="font-text text-sm font-normal">
         (Our minimum service is 2.5 hours)
       </p>
-      <div>
-        <div className="bg-secondaryColor h-5 w-10">2.5</div>
+      <div className="flex justify-between items-center flex-wrap">
+        <div className="bg-secondaryColor bg-opacity-10 border-2 border-secondaryColor border-opacity-70 h-10 w-[85px] rounded-lg flex items-center justify-center my-3">
+          2.5
+        </div>
+        <div className="bg-secondaryColor bg-opacity-10 border-2 border-secondaryColor border-opacity-70 h-10 w-[85px] rounded-lg flex items-center justify-center my-3">
+          3.0
+        </div>
+        <div className="bg-secondaryColor bg-opacity-10 border-2 border-secondaryColor border-opacity-70 h-10 w-[85px] rounded-lg flex items-center justify-center my-3">
+          3.5
+        </div>
+        <div className="bg-secondaryColor bg-opacity-10 border-2 border-secondaryColor border-opacity-70 h-10 w-[85px] rounded-lg flex items-center justify-center my-3">
+          4.0
+        </div>
+        <div className="bg-secondaryColor bg-opacity-10 border-2 border-secondaryColor border-opacity-70 h-10 w-[85px] rounded-lg flex items-center justify-center my-3">
+          4.5
+        </div>
+        <div className="bg-secondaryColor bg-opacity-10 border-2 border-secondaryColor border-opacity-70 h-10 w-[85px] rounded-lg flex items-center justify-center my-3">
+          5.0
+        </div>
+        <div className="bg-secondaryColor bg-opacity-10 border-2 border-secondaryColor border-opacity-70 h-10 w-[85px] rounded-lg flex items-center justify-center my-3">
+          5.5
+        </div>
+        <div className="bg-secondaryColor bg-opacity-10 border-2 border-secondaryColor border-opacity-70 h-10 w-[85px] rounded-lg flex items-center justify-center my-3">
+          6.0
+        </div>
+        <div className="bg-secondaryColor bg-opacity-10 border-2 border-secondaryColor border-opacity-70 h-10 w-[85px] rounded-lg flex items-center justify-center my-3">
+          6.5
+        </div>
+        <div className="bg-secondaryColor bg-opacity-10 border-2 border-secondaryColor border-opacity-70 h-10 w-[85px] rounded-lg flex items-center justify-center my-3">
+          7.0
+        </div>
+        <div className="bg-secondaryColor bg-opacity-10 border-2 border-secondaryColor border-opacity-70 h-10 w-[85px] rounded-lg flex items-center justify-center my-3">
+          7.5
+        </div>
+        <div className="bg-secondaryColor bg-opacity-10 border-2 border-secondaryColor border-opacity-70 h-10 w-[85px] rounded-lg flex items-center justify-center my-3">
+          8.0
+        </div>
       </div>
+      <h3 className="font-subHeading text-2xl font-bold text-darkColor leading-7 my-3">
+        You can also click on the time box you prefer.
+      </h3>
+      <p className="font-text text-sm font-normal text-darkColor leading-6">
+        Note: you may be asked to click on fewer or more tasks based on your
+        requested time.{" "}
+      </p>
+      <h3 className="font-subHeading text-2xl font-bold text-darkColor leading-7 my-3">
+        Estimated time to clean a home
+      </h3>
+      <p className="font-text text-sm font-normal text-darkColor leading-6">
+        Click the link to see our estimated cleaning time chart.
+      </p>
+      <LargeButton
+        Text="Estimated Time Chart"
+        customCode="justify-center bg-secondaryColor"
+        color="text-lightColor"
+        font="font-bold"
+      />
+      <p className="font-text text-lg font-normal leading-6">
+        How can your cleaner access the property?
+      </p>
+      <div className="flex justify-between items-center flex-wrap py-5">
+        <div className="bg-secondaryColor bg-opacity-10 border-2 border-secondaryColor border-opacity-70 rounded-lg h-14 w-[135px] flex items-center justify-center py-6 px-8 my-2">
+          Someone At Home
+        </div>
+        <div className="bg-secondaryColor bg-opacity-10 border-2 border-secondaryColor border-opacity-70 rounded-lg h-14 w-[135px] flex items-center justify-center py-6 px-8 my-2">
+          Concierge
+        </div>
+        <div className="bg-secondaryColor bg-opacity-10 border-2 border-secondaryColor border-opacity-70 rounded-lg h-14 w-[135px] flex items-center justify-center py-6 px-8 my-2">
+          Key Safe
+        </div>
+        <div className="bg-secondaryColor bg-opacity-10 border-2 border-secondaryColor border-opacity-70 rounded-lg h-14 w-[135px] flex items-center justify-center py-6 px-6 my-2">
+          Key Hidden
+        </div>
+      </div>
+      <div className="w-full my-5">
+        <p className="font-text text-base font-normal leading-6 py-2">
+          Where is the key hidden?
+        </p>
+        <input
+          type="text"
+          className="w-full h-20 bg-secondaryColor bg-opacity-10 border-2 border-secondaryColor border-opacity-70 rounded-md"
+        />
+      </div>
+      <div className="w-full my-5">
+        <p className="font-text text-base font-normal leading-6 py-2">
+          What is the key safe code?
+        </p>
+        <input
+          type="number"
+          className="w-full h-10 bg-secondaryColor bg-opacity-10 border-2 border-secondaryColor border-opacity-70 rounded-md"
+        />
+      </div>
+      <p className="font-text text-lg font-normal leading-6">
+        Do you have an{" "}
+        <span className="font-subHeading font-bold mr-2">alarm system</span>on?
+      </p>
+      <div className="my-4">
+        <div className="w-28 flex justify-between  mb-5 bg-[#6762f01a] rounded-full">
+          <button
+            className={`font-text  text-base font-semibold w-[50%] py-1 rounded-full ${
+              isalarmSystem ? "bg-darkColor text-lightColor " : "text-darkColor"
+            }`}
+            onClick={() => !isalarmSystem && setISAlarmSystem(true)}
+          >
+            Yes
+          </button>
+          <button
+            className={`font-text text-base font-semibold w-[50%] py-1 rounded-full ${
+              !isalarmSystem
+                ? "bg-darkColor text-lightColor "
+                : "text-darkColor"
+            }`}
+            onClick={() => isalarmSystem && setISAlarmSystem(false)}
+          >
+            No
+          </button>
+        </div>
+      </div>
+      <p className="font-text text-lg font-normal text-darkColor leading-6">
+        If yes, please have the system turned off at time of your clean or let
+        your cleaner know the system code to turn off.
+      </p>
+      <div className="w-full my-5">
+        <p className="font-text text-base font-normal leading-6 py-2">
+          What is the alarm code?
+        </p>
+        <input
+          type="number"
+          className="w-full h-10 bg-secondaryColor bg-opacity-10 border-2 border-secondaryColor border-opacity-70 rounded-md"
+        />
+      </div>
+      <p className="font-text text-lg font-normal leading-6">
+        Is there{" "}
+        <span className="font-subHeading font-bold mr-2">
+          visitors parking{" "}
+        </span>{" "}
+        available?
+      </p>
+      <div className="my-4">
+        <div className="w-28 flex justify-between  mb-5 bg-[#6762f01a] rounded-full">
+          <button
+            className={`font-text  text-base font-semibold w-[50%] py-1 rounded-full ${
+              isvisitorParking
+                ? "bg-darkColor text-lightColor "
+                : "text-darkColor"
+            }`}
+            onClick={() => !isvisitorParking && setIsVisitorParking(true)}
+          >
+            Yes
+          </button>
+          <button
+            className={`font-text text-base font-semibold w-[50%] py-1 rounded-full ${
+              !isvisitorParking
+                ? "bg-darkColor text-lightColor "
+                : "text-darkColor"
+            }`}
+            onClick={() => isvisitorParking && setIsVisitorParking(false)}
+          >
+            No
+          </button>
+        </div>
+      </div>
+      <div className="w-full my-5">
+        <input
+          type="text"
+          className="w-full h-20 bg-secondaryColor bg-opacity-10 border-2 border-secondaryColor border-opacity-70 rounded-md"
+        />
+      </div>
+      <p className="font-text text-lg font-normal leading-6">
+        Do you have any{" "}
+        <span className="font-subHeading font-bold mr-2">pets</span> in the
+        house when the cleaner will arrive?
+      </p>
+      <div className="my-4">
+        <div className="w-28 flex justify-between  mb-5 bg-[#6762f01a] rounded-full">
+          <button
+            className={`font-text  text-base font-semibold w-[50%] py-1 rounded-full ${
+              isPetInHouse ? "bg-darkColor text-lightColor " : "text-darkColor"
+            }`}
+            onClick={() => !isPetInHouse && setIsPetInHouse(true)}
+          >
+            Yes
+          </button>
+          <button
+            className={`font-text text-base font-semibold w-[50%] py-1 rounded-full ${
+              !isPetInHouse ? "bg-darkColor text-lightColor " : "text-darkColor"
+            }`}
+            onClick={() => isPetInHouse && setIsPetInHouse(false)}
+          >
+            No
+          </button>
+        </div>
+      </div>
+      <div className="w-full my-5">
+        <p className="font-text text-base font-normal leading-6 py-2">
+          If so, explain what kind and how many?
+        </p>
+        <input
+          type="number"
+          className="w-full h-20 bg-secondaryColor bg-opacity-10 border-2 border-secondaryColor border-opacity-70 rounded-md"
+        />
+      </div>
+      <div className="w-full my-5">
+        <p className="font-text text-base font-normal leading-5 py-2">
+          IF you have <span className="font-subHeading font-bold">dogs</span>,
+          explain the breed and will they be ok with a cleaner in the house?
+        </p>
+        <input
+          type="number"
+          className="w-full h-20 bg-secondaryColor bg-opacity-10 border-2 border-secondaryColor border-opacity-70 rounded-md"
+        />
+      </div>
+      <div className="w-full my-5">
+        <p className="font-text text-base font-normal leading-6 py-2">
+          Please explain where your{" "}
+          <span className="font-subHeading font-bold mr-2">products</span>and
+          <span className="font-subHeading font-bold mx-2">supplies</span>be
+          kept:
+        </p>
+        <input
+          type="number"
+          className="w-full h-20 bg-secondaryColor bg-opacity-10 border-2 border-secondaryColor border-opacity-70 rounded-md"
+        />
+      </div>
+      <p className="font-text text-base font-normal leading-5 py-2">
+        Click on the button for the list of cleaning supplies and equipment we
+        recommend to have ready for your clean.
+      </p>
+      <LargeButton
+        Text="List of supplies"
+        customCode="justify-center bg-secondaryColor"
+        color="text-lightColor"
+        font="font-bold"
+      />
+      <p className="font-text text-lg font-normal text-darkColor leading-5  my-5">
+        Other <span className="font-subHeading font-bold mr-2">notes</span>you
+        want to mention to your cleaner:
+      </p>
+      <p className="font-text text-sm text-darkColor font-normal leading-5">
+        (Explain for example: where to dispose the trash, where to leave the
+        dirty rags, if a family member will enter the home while the cleaner is
+        there, what rooms or levels of the house you would prefer the cleaner to
+        start and any other important notes your cleaner should know of){" "}
+      </p>
+      <div className="w-full my-5">
+        <input
+          type="number"
+          className="w-full h-80 bg-secondaryColor bg-opacity-10 border-2 border-secondaryColor border-opacity-70 rounded-md"
+        />
+        <p className="font-text text-xs font-normal text-darkColor">
+          2000 word limit.
+        </p>
+      </div>
+      <h3 className="font-text text-lg font-normal text-darkColor leading-6 my-5">
+        What we <span className="font-subHeading font-bold">DO NOT</span> Clean
+      </h3>
+      <div className="bg-accentColor bg-opacity-20 rounded-md">
+        <div className="flex py-4 px-4">
+          {/*ICOn*/}
+          <div className="w-[10%]">
+            {" "}
+            <GoPrimitiveDot className="text-secondaryColor text-lg mt-[3px] ml-1" />
+          </div>
+          <div className="w-[90%]">
+            <p className="font-text text-sm font-normal text-darkColor leading-5 pr-4">
+              We do not offer these services: carpets cleaning, upholstery
+              cleaning, mattress cleaning, duct cleaning.
+            </p>
+          </div>
+        </div>
+        <div className="flex py-2 px-4">
+          <div className="w-[10%]">
+            {" "}
+            <GoPrimitiveDot className="text-secondaryColor text-lg mt-[3px] ml-1" />
+          </div>
+          <div className="w-[90%]">
+            <p className="font-text text-sm font-normal text-darkColor leading-5 pr-4">
+              We do not clean the exterior of your property; no outside windows,
+              walkways, driveways, garages, sheds, gardens, lawns, patio
+              furniture, outside walls, etc.
+            </p>
+          </div>
+        </div>
+        <div className="flex py-2 px-4">
+          <div className="w-[10%]">
+            {" "}
+            <GoPrimitiveDot className="text-secondaryColor text-lg mt-[3px] ml-1" />
+          </div>
+          <div className="w-[90%]">
+            <p className="font-text text-sm font-normal text-darkColor leading-5 pr-4">
+              We do not lift, pull out, or move heavy furniture or appliances
+              such as: couches, fridges, ovens, bookshelves, washers, dryers,
+              etc. The cleaners will try to reach underneath or around but we
+              can't guarantee that that area will be completely cleaned under
+              and around all furniture. If you want to have the area cleaned
+              under a heavy piece of furniture or appliance, please move any
+              large furniture beforehand.
+            </p>
+          </div>
+        </div>
+        <div className="flex py-2 px-4">
+          <div className="w-[10%]">
+            {" "}
+            <GoPrimitiveDot className="text-secondaryColor text-lg mt-[3px] ml-1" />
+          </div>
+          <div className="w-[90%]">
+            <p className="font-text text-sm font-normal text-darkColor leading-5 pr-4">
+              The cleaners do not clean expensive breakable ornaments, expensive
+              glassware, antiques, TV and computer screens, inside fireplaces,
+              etc.
+            </p>
+          </div>
+        </div>
+        <div className="flex py-2 px-4">
+          <div className="w-[10%]">
+            {" "}
+            <GoPrimitiveDot className="text-secondaryColor text-lg mt-[3px] ml-1" />
+          </div>
+          <div className="w-[90%]">
+            <p className="font-text text-sm font-normal text-darkColor leading-5 pr-4">
+              The cleaners not clean the inside of washers, dryers, and
+              dishwashers.
+            </p>
+          </div>
+        </div>
+        <div className="flex py-2 px-4">
+          <div className="w-[10%]">
+            {" "}
+            <GoPrimitiveDot className="text-secondaryColor text-lg mt-[3px] ml-1" />
+          </div>
+          <div className="w-[90%]">
+            <p className="font-text text-sm font-normal text-darkColor leading-5 pr-4">
+              The cleaners do not clean cat litter trays, empty cat litters or
+              scoop out pet excrement from cat litters.
+            </p>
+          </div>
+        </div>
+        <div className="flex py-2 px-4">
+          <div className="w-[10%]">
+            {" "}
+            <GoPrimitiveDot className="text-secondaryColor text-lg mt-[3px] ml-1" />
+          </div>
+          <div className="w-[90%]">
+            <p className="font-text text-sm font-normal text-darkColor leading-5 pr-4">
+              The cleaners not clean pet or human bodily fluids or excrement,
+              mold, hazardous materials, dangerous chemicals, or deceased
+              rodents/ vermin.
+            </p>
+          </div>
+        </div>
+        <div className="flex py-2 px-4">
+          <div className="w-[10%]">
+            {" "}
+            <GoPrimitiveDot className="text-secondaryColor text-lg mt-[3px] ml-1" />
+          </div>
+          <div className="w-[90%]">
+            <p className="font-text text-sm font-normal text-darkColor leading-5 pr-4">
+              The cleaners do not clean ceilings or areas outside of a cleaner's
+              reasonable reach (ie. high walls, high chandeliers, high shelves,
+              light fixtures, or the tops of windows, any surfaces/area that is
+              out of reach to the cleaner) If you provide a step ladder they
+              will use that to reach areas just out of their reach, the cleaners
+              do NOT climb on full ladders to clean chandeliers, for example.
+            </p>
+          </div>
+        </div>
+        <div className="flex py-2 px-4">
+          <div className="w-[10%]">
+            {" "}
+            <GoPrimitiveDot className="text-secondaryColor text-lg mt-[3px] ml-1" />
+          </div>
+          <div className="w-[90%]">
+            <p className="font-text text-sm font-normal text-darkColor leading-5 pr-4">
+              The cleaners not wash or mop unfinished concrete.
+            </p>
+          </div>
+        </div>
+        <div className="flex py-2 px-4">
+          <div className="w-[10%]">
+            {" "}
+            <GoPrimitiveDot className="text-secondaryColor text-lg mt-[3px] ml-1" />
+          </div>
+          <div className="w-[90%]">
+            <p className="font-text text-sm font-normal text-darkColor leading-5 pr-4">
+              The cleaners do not wash and delicate dishes like crystal, fine
+              glassware or antique or laundry by hand.
+            </p>
+          </div>
+        </div>
+        <div className="flex py-2 px-4">
+          <div className="w-[10%]">
+            {" "}
+            <GoPrimitiveDot className="text-secondaryColor text-lg mt-[3px] ml-1" />
+          </div>
+          <div className="w-[90%]">
+            <p className="font-text text-sm font-normal text-darkColor leading-5 pr-4">
+              The cleaners do not take any garbage or junk off the premises.
+            </p>
+          </div>
+        </div>
+        <div className="flex py-2 px-4">
+          <div className="w-[10%]">
+            {" "}
+            <GoPrimitiveDot className="text-secondaryColor text-lg mt-[3px] ml-1" />
+          </div>
+          <div className="w-[90%]">
+            <p className="font-text text-sm font-normal text-darkColor leading-5 pr-4">
+              The cleaners has a right to refuse any cleaning jobs or areas that
+              deem unsafe, extreme unsanitary conditions, or any other reason to
+              their discretion.
+            </p>
+          </div>
+        </div>
+        <div className="flex py-2 px-4">
+          <div className="w-[10%]">
+            {" "}
+            <GoPrimitiveDot className="text-secondaryColor text-lg mt-[3px] ml-1" />
+          </div>
+          <div className="w-[90%]">
+            <p className="font-text text-sm font-normal text-darkColor leading-5 pr-4">
+              If any reason the cleaner feels uncomfortable or unsafe on the
+              premises for any reason, the cleaner has a right to leave the
+              premises immediately.
+            </p>
+          </div>
+        </div>
+      </div>
+      <p className="font-subHeading text-base font-bold leading-5 text-darkColor my-5">
+        If the customer has not supplied the tools, equipment and cleaning
+        supplies adequate enough to complete the clean, the cleaner has the
+        right to refuse the cleaning job and the clean will be cancelled and can
+        be rescheduled.
+      </p>
+      <LargeButton
+        Text="Continue"
+        color="text-lightColor"
+        customCode="justify-center bg-secondaryColor"
+        font="font-bold"
+      />
     </div>
   );
 }

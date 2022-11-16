@@ -10,6 +10,7 @@ import { useState } from "react";
 import { HiMenu } from "react-icons/hi";
 import { MdClose } from "react-icons/md";
 import { AiOutlineClose } from "react-icons/ai";
+import MobileMenu from "./MobileMenu";
 const Header = ({ bgColor, position }) => {
   let Links = [
     { name: "Our Guarantee", link: "/" },
@@ -32,7 +33,7 @@ const Header = ({ bgColor, position }) => {
           onClick={() => setNavbarOpen(!navbarOpen)}
         >
           {navbarOpen ? (
-            <MdClose className="h-7 w-10 sm:hidden " />
+            <MdClose className="h-7 w-10 sm:hidden z-50 " />
           ) : (
             <HiMenu className="h-7 w-10 sm:hidden " />
           )}
@@ -70,26 +71,7 @@ const Header = ({ bgColor, position }) => {
           </ul>
         </div>
       </div>
-      {navbarOpen ? (
-        <div className="text-center sm:hidden bg-primaryColor absolute w-[100%]">
-          <ul className=" h-52 py-3  flex flex-col justify-evenly items-center pt-[5rem]  font-heading text-xl font-normal text-lightColor">
-            <li className="font-text text-base font-medium sm:text-xs">
-              Our Guarantee
-            </li>
-            <li className="font-text text-base font-medium sm:text-xs">
-              About Us
-            </li>
-            <li className="font-text text-base font-medium sm:text-xs">
-              Profile
-            </li>
-            <li className="font-text text-base font-medium sm:text-xs">
-              Hello G
-            </li>
-          </ul>
-        </div>
-      ) : (
-        <div className="hidden"></div>
-      )}
+      {navbarOpen ? <MobileMenu /> : <div className="hidden"></div>}
     </>
   );
 };

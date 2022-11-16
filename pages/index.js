@@ -33,7 +33,7 @@ export default function Home() {
         {/* <SignInSignUp /> */}
         {/* <VirifyEmail /> */}
         {/* <UpdateEmail /> */}
-        <GetAQuoteForm />
+        {/* <GetAQuoteForm /> */}
         {/* <GetAQuoteForm1 /> */}
         {/* <GetAQuoteForm2 /> */}
         {/* <GetAQuoteForm3 /> */}
@@ -46,7 +46,7 @@ export default function Home() {
         {/* <CleanerProfile /> */}
         {/* <BookingDetails /> */}
         {/*Other All Screens */}
-        {/* <HomePage /> */}
+        <HomePage />
         {/* <Blogs /> */}
         {/* <FaQ /> */}
         {/* <About /> */}
