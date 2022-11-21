@@ -1,9 +1,8 @@
-import React from "react";
 import ServiceCard from "./ServiceCard";
 function ServiceSection() {
   return (
     <div className="bg-lightShade  text-left px-5 py-10 sm:flex sm:items-center sm:justify-center sm:flex-col">
-      <h2 className="font-heading text-2xl font-bold lg:text-3xl xl:text-4xl">
+      <h2 className="font-heading text-[44px] font-bold text-darkColor leading-10 lg:text-3xl xl:text-4xl">
         How it works
       </h2>
       <p className="py-2 px-1 text-md font-text font-semibold">

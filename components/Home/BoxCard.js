@@ -1,9 +1,18 @@
 import Image from "next/image";
-// import subtract1 from "../../public/assets/subtract-1.png";
-function BoxCard({ imageSrc, Title, Description, buttonText, Text }) {
+function BoxCard({
+  imageSrc,
+  Title,
+  Description,
+  buttonText,
+  Text,
+  background,
+}) {
   return (
     <div
-      className={`flex bg-lightColor my-4 py-5 px-2 h-72 w-72 rounded-[8px]  items-center justify-center shadow-[-10px_1px_20px_15px_rgba(0,0,0,0.1)] sm:h-58 sm:w-56 sm:m-2 lg:h-72 lg:w-72  lg:m-5 xl:h-80 xl:w-80 2xl:h-96 2xl:w-96`}
+      className={`flex bg-lightColor my-4 py-5 px-2 h-72 w-72 rounded-[8px]  items-center justify-center shadow-[-10px_1px_20px_15px_rgba(0,0,0,0.1)]
+       sm:h-58 sm:w-56 sm:m-2 lg:h-72 lg:w-72  lg:m-5 xl:h-80 xl:w-80 2xl:h-96 2xl:w-96
+       ${background} bg-cover bg-left
+       `}
     >
       <div className="w-[30%] h-64 pt-2 pr-3">
         <Image src={imageSrc} height={75} width={75} />
@@ -31,13 +40,3 @@ function BoxCard({ imageSrc, Title, Description, buttonText, Text }) {
 }
 
 export default BoxCard;
-
-// style={{
-//   backgroundImage: 'url("../../public/assets/subtract-1.png")',
-//   backgroundRepeat: "no-repeat",
-//   backgroundSize: "cover",
-//   backgroundPosition: "center center",
-// }}
-
-// ../public/assets/subtract-1.png
-//bg-[url('../public/assets/subtract-1.png')] drop-shadow-none bg-no-repeat bg-contain bg-right-bottom

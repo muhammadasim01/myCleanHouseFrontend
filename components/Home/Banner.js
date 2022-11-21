@@ -44,12 +44,12 @@ const Banner = () => {
             </p>
             <form className="flex items-center justify-center w-full pl-7 sm:w-[600px]">
               <input
-                type="email"
+                type="number"
                 placeholder="Enter your postcode/Zip code"
-                className="h-10 p-5 w-full my-4 rounded-md  "
+                className="h-10 py-5 w-full my-4 rounded-md"
               />
-              <button>
-                <BiSearch className="h-6 w-6 text-secondaryColor relative right-8 " />
+              <button className="p-1  relative right-9 bg-primaryColor rounded-md">
+                <BiSearch className="h-6 w-6 text-lightColor " />
               </button>
             </form>
           </div>

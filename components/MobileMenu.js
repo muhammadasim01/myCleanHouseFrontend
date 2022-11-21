@@ -12,12 +12,12 @@ function MobileMenu() {
       </div>
       <form className="flex items-center justify-center w-full pl-7 sm:w-[600px]">
         <input
-          type="email"
-          placeholder="Enter your postcode/Zip code"
+          type="text"
+          placeholder="Search Cleaners"
           className="h-10 p-5 w-full my-4 rounded-md  "
         />
-        <button>
-          <BiSearch className="h-6 w-6 text-secondaryColor relative right-8 " />
+        <button className="py-1 px-1 relative right-10 bg-primaryColor rounded-md">
+          <BiSearch className="h-6 w-6 text-lightColor" />
         </button>
       </form>
       <nav>

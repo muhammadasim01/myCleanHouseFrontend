@@ -1,6 +1,7 @@
-function PrimaryButton({ Title, logo, customCode, bgColor }) {
+function PrimaryButton({ Title, logo, customCode, bgColor, action }) {
   return (
-    <div
+    <button
+      onClick={action}
       className={`flex justify-between items-center w-[90%] py-2 px-4 ${customCode} rounded-3xl`}
     >
       <div
@@ -11,7 +12,7 @@ function PrimaryButton({ Title, logo, customCode, bgColor }) {
       <div>
         <p className="font-text text-lightColor text-lg font-bold">{Title}</p>
       </div>
-    </div>
+    </button>
   );
 }
 

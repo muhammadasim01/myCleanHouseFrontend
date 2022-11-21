@@ -30,7 +30,7 @@ export default function Home() {
         {/* <SignUp /> */}
         {/* <SignIn /> */}
         {/* <SignUp /> */}
-        {/* <SignInSignUp /> */}
+        <SignInSignUp />
         {/* <VirifyEmail /> */}
         {/* <UpdateEmail /> */}
         {/* <GetAQuoteForm /> */}
@@ -46,7 +46,7 @@ export default function Home() {
         {/* <CleanerProfile /> */}
         {/* <BookingDetails /> */}
         {/*Other All Screens */}
-        <HomePage />
+        {/* <HomePage /> */}
         {/* <Blogs /> */}
         {/* <FaQ /> */}
         {/* <About /> */}
