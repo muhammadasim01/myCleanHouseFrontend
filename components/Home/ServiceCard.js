@@ -7,10 +7,10 @@ function ServiceCard({ Count, Title, Description, buttonText }) {
       <div className=" h-8 w-8 bg-secondaryColor p-2 rounded-full flex items-center justify-center text-2xl text-lightColor">
         {Count}
       </div>
-      <h3 className="text-2xl font-bold text-center pt-5 font-heading lg:pl-20">
+      <h3 className="text-2xl font-bold text-center pt-5 font-heading">
         {Title}
       </h3>
-      <p className="text-center font-text pt-5 text-md font-normal lg:pl-20">
+      <p className="text-center font-text pt-5 text-md font-normal">
         {Description}
       </p>
       {buttonText && (

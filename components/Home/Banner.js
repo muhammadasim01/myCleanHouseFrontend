@@ -8,7 +8,7 @@ import { BsCheckLg } from "react-icons/bs";
 const Banner = () => {
   return (
     <>
-      <div className="bg-[url('../public/assets/Mobile-Banner.png')] bg-top bg-no-repeat h-[616px] w-[100%] bg-cover  sm:h-[780px]  md:h-[700px] md:bg-center lg:bg-cover xl:bg:contain 2xl:bg:contain xl-h-[500px] 2xl:h-[800px]">
+      <div className="bg-[url('../public/assets/Mobile-Banner.png')] bg-top sm:bg-[url('../public/assets/Banner.png')] sm:bg-center bg-no-repeat h-[616px] w-[100%] bg-cover  sm:h-[780px]  md:h-[700px] md:bg-center lg:bg-cover xl:bg:contain 2xl:bg:contain xl-h-[500px] 2xl:h-[800px]">
         <div className="flex flex-row items-center justify-center pt-[9rem] md:pt-[15rem] lg:pt-[10rem] xl:pt-[7rem]">
           <div className="flex flex-col">
             <span className="flex self-start px-7 pb-5">
@@ -18,10 +18,7 @@ const Banner = () => {
               <AiTwotoneStar className="text-[#FFCE31] h-5 w-5" />
               <AiTwotoneStar className="text-[#FFCE31] h-5 w-5" />
             </span>
-            <h1
-              className="font-heading text-lightColor text-3xl font-bold px-7"
-              z
-            >
+            <h1 className="font-heading text-lightColor text-3xl font-bold px-7">
               Book a local cleaner in your area{" "}
               <span className="font-subHeading text-lg font-light">
                 Canada & USA
@@ -37,24 +34,25 @@ const Banner = () => {
                 Pay and book online.
               </span>
               <span className="flex items-center font-semibold ">
-                <BsCheckLg className="mr-2 mb-6 text-secondaryColor" /> GPS
-                tracking when your <br />
+                <BsCheckLg className="mr-2 mb-6 text-secondaryColor" />
+                GPS tracking when your <br />
                 cleaner is on route.
               </span>
             </p>
             <form className="flex items-center justify-center w-full pl-7 sm:w-[600px]">
               <input
                 type="number"
-                placeholder="Enter your postcode/Zip code"
-                className="h-10 py-5 w-full my-4 rounded-md"
+                placeholder="Enter your postcode"
+                className="h-10 w-full my-4 rounded-md"
               />
-              <button className="p-1  relative right-9 bg-primaryColor rounded-md">
+              <button className="p-1 sm:w-40 bg-primaryColor right-10 relative sm:right-32 flex sm:bg-secondaryColor text-lightColor rounded-md">
                 <BiSearch className="h-6 w-6 text-lightColor " />
+                <span className="hidden sm:flex">Search Now</span>
               </button>
             </form>
           </div>
           <div className="hidden lg:block lg:pr-[2rem] ">
-            <Image src={BannerMain}></Image>
+            <Image src={BannerMain} />
           </div>
         </div>
       </div>

@@ -11,10 +11,12 @@ import Subscription from "../components/Home/Subscription";
 import SecondBanner from "../components/Home/SecondBanner";
 import ServiceSection from "../components/Home/ServiceSection";
 import Footer from "../components/Footer";
+import MobileTopBar from "../components/Home/MobileTopBar";
 import TopBar from "../components/Home/TopBar";
 const HomePage = () => {
   return (
     <div>
+      <MobileTopBar />
       <TopBar />
       <Header position={"absolute"} />
       <Banner />
