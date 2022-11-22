@@ -13,7 +13,7 @@ function ServiceSection() {
       <p className="font-text py-2 px-1 text-md font-semibold">
         Our cleaners are experienced and trusted by clients
       </p>
-      <div>
+      <div className="flex justify-center flex-wrap">
         <RectangularCard
           Title="Reliable and Trustworthy"
           Description="At My Clean House, we ensure to hire experienced and reliable

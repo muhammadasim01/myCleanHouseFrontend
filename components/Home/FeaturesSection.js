@@ -18,8 +18,10 @@ function FeaturesSection() {
         Here are some of the benefits of choosing My Clean House for your home
         cleaning needs:
       </p>
-      <FeaturedCard1 />
-      <FeaturedCard2 />
+      <div className="flex flex-col md:flex-row md:w-[760px] lg:w-[900px] md:justify-between">
+        <FeaturedCard1 />
+        <FeaturedCard2 />
+      </div>
       <p className="font-subHeading text-darkColor text-center text-base font-extrabold py-5 leading-7">
         At My Clean House we aim to make your life easier by taking on those
         extra, time-consuming tasks that you just dont have the time for.

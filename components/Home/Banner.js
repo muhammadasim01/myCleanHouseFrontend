@@ -5,7 +5,14 @@ import { BiSearch } from "react-icons/bi";
 import { FaStar } from "react-icons/fa";
 import { AiTwotoneStar } from "react-icons/ai";
 import { BsCheckLg } from "react-icons/bs";
+import { useState } from "react";
 const Banner = () => {
+  const [inputVal, setInputVal] = useState();
+  const submitHandler = (e) => {
+    e.preventDefault();
+    console.log("The Form Data is", inputVal);
+    setInputVal("");
+  };
   return (
     <>
       <div className="bg-[url('../public/assets/Mobile-Banner.png')] bg-top sm:bg-[url('../public/assets/Banner.png')] sm:bg-center bg-no-repeat h-[616px] w-[100%] bg-cover  sm:h-[780px]  md:h-[700px] md:bg-center lg:bg-cover xl:bg:contain 2xl:bg:contain xl-h-[500px] 2xl:h-[800px]">
@@ -44,8 +51,15 @@ const Banner = () => {
                 type="number"
                 placeholder="Enter your postcode"
                 className="h-10 w-full my-4 rounded-md"
+                value={inputVal}
+                onChange={(e) => setInputVal(e.target.value)}
               />
-              <button className="p-1 sm:w-40 bg-primaryColor right-10 relative sm:right-32 flex sm:bg-secondaryColor text-lightColor rounded-md">
+              <button
+                onClick={submitHandler}
+                className="p-1 sm:w-40 bg-primaryColor right-10 relative 
+              sm:right-32 flex sm:bg-secondaryColor text-lightColor 
+              rounded-md"
+              >
                 <BiSearch className="h-6 w-6 text-lightColor " />
                 <span className="hidden sm:flex">Search Now</span>
               </button>

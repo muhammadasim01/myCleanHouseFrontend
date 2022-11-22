@@ -10,7 +10,7 @@ function FeaturedCard2({ Title, src }) {
       </div>
       <div className="pt-5">
         <span className="flex items-center text-lg font-normal">
-          <BsCheckLg className="mr-2 text-2xl mb-28 text-secondaryColor" />
+          <BsCheckLg className="mr-2 text-2xl mb-24 sm:mb-12 text-secondaryColor" />
           House cleaning, apartment cleaning,
           <br />
           condo cleaning, office cleaning,

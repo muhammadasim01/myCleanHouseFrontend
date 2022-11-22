@@ -1,8 +1,7 @@
 import Image from "next/image";
-// import subtract1 from "../../public/assets/subtract-1.png";
 function RectangularCard({ imageSrc, Title, Description }) {
   return (
-    <div className="flex bg-lightColor rounded-lg mx-4 my-10 shadow-[-10px_1px_20px_15px_rgba(0,0,0,0.1)]">
+    <div className="flex w-[600px] bg-lightColor rounded-lg mx-4 my-10 shadow-[-10px_1px_20px_15px_rgba(0,0,0,0.1)]">
       <div className="w-[25%] pt-10 pl-2">
         <Image src={imageSrc} />
       </div>
@@ -19,13 +18,3 @@ function RectangularCard({ imageSrc, Title, Description }) {
 }
 
 export default RectangularCard;
-
-// style={{
-//   backgroundImage: 'url("../../public/assets/subtract-1.png")',
-//   backgroundRepeat: "no-repeat",
-//   backgroundSize: "cover",
-//   backgroundPosition: "center center",
-// }}
-
-// ../public/assets/subtract-1.png
-//bg-[url('../public/assets/subtract-1.png')] drop-shadow-none bg-no-repeat bg-contain bg-right-bottom

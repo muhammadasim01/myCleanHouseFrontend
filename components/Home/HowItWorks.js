@@ -1,7 +1,13 @@
 import ServiceCard from "./ServiceCard";
+import { FaExclamation } from "react-icons/fa";
+import { BsQuestionLg } from "react-icons/bs";
 function ServiceSection() {
   return (
-    <div className="bg-lightShade  text-left px-5 py-10 sm:flex sm:items-center sm:justify-center sm:flex-col">
+    <div className="bg-lightShade  text-left px-5 py-10 sm:flex sm:items-center sm:justify-center sm:flex-col relative">
+      <div className="flex absolute top-[-15px] right-0 sm:right-5 lg:right-10">
+        <FaExclamation className="text-lightColor text-7xl sm:text-9xl" />
+        <BsQuestionLg className="text-lightColor text-7xl sm:text-9xl" />
+      </div>
       <h2 className="font-heading text-[44px] font-bold text-darkColor leading-10 lg:text-3xl xl:text-4xl">
         How it works
       </h2>
