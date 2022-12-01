@@ -1,0 +1,14 @@
+@font-face{
+    src:url('../public/fonts/TTNorms-Regular.otf');
+    font-family: "TTNorm-Regular";
+}
+@font-face{
+    src:url('../public/fonts/TTNorms-Bold.otf');
+    font-family: "TTNorm-Bold";
+}
+.Bold{
+    font-family: "TTNorm-Bold";
+}
+.Regular{
+    font-family: "TTNorm-Regular";
+}
