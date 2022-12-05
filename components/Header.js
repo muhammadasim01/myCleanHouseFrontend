@@ -12,15 +12,15 @@ import { MdClose } from "react-icons/md";
 import { AiOutlineClose } from "react-icons/ai";
 import MobileMenu from "./MobileMenu";
 const Header = ({ bgColor, position }) => {
-  let Links = [
-    { name: "Our Guarantee", link: "/" },
-    { name: "About Us", link: "/" },
-    { name: "Book A Cleaner", link: "/" },
-    { name: "Blogs", link: "/" },
-    { name: "Contact Us", link: "/" },
-  ];
+  // let Links = [
+  //   { name: "Our Guarantee", link: "/" },
+  //   { name: "About Us", link: "/" },
+  //   { name: "Book A Cleaner", link: "/" },
+  //   { name: "Blogs", link: "/" },
+  //   { name: "Contact Us", link: "/" },
+  // ];
   const [navbarOpen, setNavbarOpen] = useState(false);
-  console.log("The State is", navbarOpen);
+  // console.log("The State is", navbarOpen);
   return (
     <>
       <div

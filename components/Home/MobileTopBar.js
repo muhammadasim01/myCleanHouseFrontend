@@ -9,7 +9,7 @@ function TopBar() {
           <Image src={logo} />
         </figure>
         <div className="flex flex-col items-start p-2 mt-3">
-          <h2 className="font-subHeading text-sm">My Clean House App</h2>
+          <h2 className="font-subHeading text-sm">Maidzly</h2>
           <span className="flex text-primaryColor">
             <AiTwotoneStar />
             <AiTwotoneStar />
